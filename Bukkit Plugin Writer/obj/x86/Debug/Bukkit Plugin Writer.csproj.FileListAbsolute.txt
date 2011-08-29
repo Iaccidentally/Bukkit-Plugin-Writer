@@ -1,0 +1,23 @@
+C:\Users\Dave\AppData\Local\Temporary Projects\Bukkit Plugin Writer\bin\Debug\Bukkit Plugin Writer.exe
+C:\Users\Dave\AppData\Local\Temporary Projects\Bukkit Plugin Writer\bin\Debug\Bukkit Plugin Writer.pdb
+C:\Users\Dave\AppData\Local\Temporary Projects\Bukkit Plugin Writer\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Users\Dave\AppData\Local\Temporary Projects\Bukkit Plugin Writer\obj\x86\Debug\Bukkit_Plugin_Writer.Form1.resources
+C:\Users\Dave\AppData\Local\Temporary Projects\Bukkit Plugin Writer\obj\x86\Debug\Bukkit_Plugin_Writer.Properties.Resources.resources
+C:\Users\Dave\AppData\Local\Temporary Projects\Bukkit Plugin Writer\obj\x86\Debug\GenerateResource.read.1.tlog
+C:\Users\Dave\AppData\Local\Temporary Projects\Bukkit Plugin Writer\obj\x86\Debug\GenerateResource.write.1.tlog
+C:\Users\Dave\AppData\Local\Temporary Projects\Bukkit Plugin Writer\obj\x86\Debug\Bukkit Plugin Writer.exe
+C:\Users\Dave\AppData\Local\Temporary Projects\Bukkit Plugin Writer\obj\x86\Debug\Bukkit Plugin Writer.pdb
+C:\Users\Dave\documents\visual studio 2010\Projects\Bukkit Plugin Writer\Bukkit Plugin Writer\obj\x86\Debug\Bukkit Plugin Writer.exe
+C:\Users\Dave\documents\visual studio 2010\Projects\Bukkit Plugin Writer\Bukkit Plugin Writer\obj\x86\Debug\Bukkit Plugin Writer.pdb
+C:\Users\Dave\documents\visual studio 2010\Projects\Bukkit Plugin Writer\Bukkit Plugin Writer\bin\Debug\Bukkit Plugin Writer.exe.config
+C:\Users\Dave\documents\visual studio 2010\Projects\Bukkit Plugin Writer\Bukkit Plugin Writer\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Users\Dave\documents\visual studio 2010\Projects\Bukkit Plugin Writer\Bukkit Plugin Writer\obj\x86\Debug\Bukkit_Plugin_Writer.Form1.resources
+C:\Users\Dave\documents\visual studio 2010\Projects\Bukkit Plugin Writer\Bukkit Plugin Writer\obj\x86\Debug\Bukkit_Plugin_Writer.Properties.Resources.resources
+C:\Users\Dave\documents\visual studio 2010\Projects\Bukkit Plugin Writer\Bukkit Plugin Writer\obj\x86\Debug\GenerateResource.read.1.tlog
+C:\Users\Dave\documents\visual studio 2010\Projects\Bukkit Plugin Writer\Bukkit Plugin Writer\obj\x86\Debug\ResGen.read.1.tlog
+C:\Users\Dave\documents\visual studio 2010\Projects\Bukkit Plugin Writer\Bukkit Plugin Writer\obj\x86\Debug\GenerateResource.write.1.tlog
+C:\Users\Dave\documents\visual studio 2010\Projects\Bukkit Plugin Writer\Bukkit Plugin Writer\obj\x86\Debug\ResGen.write.1.tlog
+C:\Users\Dave\documents\visual studio 2010\Projects\Bukkit Plugin Writer\Bukkit Plugin Writer\bin\Debug\Bukkit Plugin Writer.exe
+C:\Users\Dave\documents\visual studio 2010\Projects\Bukkit Plugin Writer\Bukkit Plugin Writer\bin\Debug\Bukkit Plugin Writer.pdb
+C:\Users\Dave\documents\visual studio 2010\Projects\Bukkit Plugin Writer\Bukkit Plugin Writer\bin\Debug\ScintillaNet.dll
+C:\Users\Dave\documents\visual studio 2010\Projects\Bukkit Plugin Writer\Bukkit Plugin Writer\obj\x86\Debug\Bukkit_Plugin_Writer.NewPlugin.resources
