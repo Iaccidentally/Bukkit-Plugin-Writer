@@ -15,6 +15,7 @@ namespace Bukkit_Plugin_Writer
         public NewPlugin()
         {
             InitializeComponent();
+            pluginFolder.Text = System.Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments) + Path.DirectorySeparatorChar + "Bukkit Plugins";
         }
 
         private void labelX4_Click(object sender, EventArgs e)
@@ -41,6 +42,8 @@ namespace Bukkit_Plugin_Writer
 
         private void buttonX2_Click(object sender, EventArgs e)
         {
+            if (pluginFolder.Text != "")
+                folderBrowserDialog1.SelectedPath = pluginFolder.Text;
             if (folderBrowserDialog1.ShowDialog() == DialogResult.OK)
                 pluginFolder.Text = folderBrowserDialog1.SelectedPath;
 
@@ -50,7 +53,7 @@ namespace Bukkit_Plugin_Writer
         {
             if (pluginName.Text != "" && pluginNamespace.Text != "" && pluginVersion.Text != "" && pluginFolder.Text != "")
             {
-                string Location = pluginFolder.Text + Path.PathSeparator + pluginName.Text;
+                string Location = pluginFolder.Text + Path.DirectorySeparatorChar + pluginName.Text;
                 if (Directory.Exists(Location))
                 {
                     if (MessageBox.Show("The folder that you have specified already has a plugin by that name, if you click yes it will be deleted. Continue?", "Warning!!", MessageBoxButtons.YesNo, MessageBoxIcon.None, MessageBoxDefaultButton.Button2) == System.Windows.Forms.DialogResult.No)
@@ -59,7 +62,6 @@ namespace Bukkit_Plugin_Writer
                         Directory.Delete(Location);
                 }
                 Directory.CreateDirectory(Location);
-                File.CSreate(Location + ".bpw");
                 StreamWriter bpwwriter = new StreamWriter(Location + ".bpw");
                 //Write config to file
                 bpwwriter.Close();
