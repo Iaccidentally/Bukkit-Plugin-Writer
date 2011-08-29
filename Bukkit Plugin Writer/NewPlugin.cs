@@ -50,14 +50,19 @@ namespace Bukkit_Plugin_Writer
         {
             if (pluginName.Text != "" && pluginNamespace.Text != "" && pluginVersion.Text != "" && pluginFolder.Text != "")
             {
-                if (Directory.Exists(pluginFolder.Text + Path.PathSeparator + pluginName.Text))
+                string Location = pluginFolder.Text + Path.PathSeparator + pluginName.Text;
+                if (Directory.Exists(Location))
                 {
                     if (MessageBox.Show("The folder that you have specified already has a plugin by that name, if you click yes it will be deleted. Continue?", "Warning!!", MessageBoxButtons.YesNo, MessageBoxIcon.None, MessageBoxDefaultButton.Button2) == System.Windows.Forms.DialogResult.No)
                         return;
                     else
-                        Directory.Delete(pluginFolder.Text + Path.PathSeparator + pluginName.Text);
+                        Directory.Delete(Location);
                 }
-                Directory.CreateDirectory(pluginFolder.Text + Path.PathSeparator + pluginName.Text);
+                Directory.CreateDirectory(Location);
+                File.CSreate(Location + ".bpw");
+                StreamWriter bpwwriter = new StreamWriter(Location + ".bpw");
+                //Write config to file
+                bpwwriter.Close();
                 
             }
             else
