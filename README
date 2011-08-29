@@ -1,0 +1,7 @@
+If you go diving in deep enough, you'll find executables somewhere :P (I'll add a link to the latest commited (but not necessarily stable) EXE soon :-) )
+
+If you are going to compile (maybe run, idk) you will need to copy ScintillaNET.dll and Scilexer.dll into somewhere located in your Windows path variable.
+
+If you have any ideas, email me - chris.ward@emailme.com.au
+
+At the moment I won't be accepting pull requests nor adding contributors.
