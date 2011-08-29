@@ -52,7 +52,10 @@ namespace Bukkit_Plugin_Writer
             {
                 if (Directory.Exists(pluginFolder.Text + Path.PathSeparator + pluginName.Text))
                 {
-                    MessageBox.Show("The folder that you have specified already has a plugin by that name, if you click yes it will be deleted. Continue?", "Warning!!", MessageBoxButtons.YesNo, MessageBoxIcon.None, MessageBoxDefaultButton.Button2);
+                    if (MessageBox.Show("The folder that you have specified already has a plugin by that name, if you click yes it will be deleted. Continue?", "Warning!!", MessageBoxButtons.YesNo, MessageBoxIcon.None, MessageBoxDefaultButton.Button2) == System.Windows.Forms.DialogResult.No)
+                        return;
+                    else
+                        Directory.Delete(pluginFolder.Text + Path.PathSeparator + pluginName.Text);
                 }
                 Directory.CreateDirectory(pluginFolder.Text + Path.PathSeparator + pluginName.Text);
                 
