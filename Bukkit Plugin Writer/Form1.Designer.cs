@@ -29,8 +29,12 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.ribbonControl1 = new DevComponents.DotNetBar.RibbonControl();
             this.ribbonPanel1 = new DevComponents.DotNetBar.RibbonPanel();
+            this.ribbonBar2 = new DevComponents.DotNetBar.RibbonBar();
+            this.buttonItem2 = new DevComponents.DotNetBar.ButtonItem();
+            this.buttonItem3 = new DevComponents.DotNetBar.ButtonItem();
             this.ribbonPanel2 = new DevComponents.DotNetBar.RibbonPanel();
             this.ribbonTabItem1 = new DevComponents.DotNetBar.RibbonTabItem();
             this.ribbonTabItem2 = new DevComponents.DotNetBar.RibbonTabItem();
@@ -42,10 +46,27 @@
             this.dockSite4 = new DevComponents.DotNetBar.DockSite();
             this.bar5 = new DevComponents.DotNetBar.Bar();
             this.panelDockContainer2 = new DevComponents.DotNetBar.PanelDockContainer();
+            this.splitContainer1 = new System.Windows.Forms.SplitContainer();
+            this.switchButton3 = new DevComponents.DotNetBar.Controls.SwitchButton();
+            this.switchButton2 = new DevComponents.DotNetBar.Controls.SwitchButton();
+            this.switchButton1 = new DevComponents.DotNetBar.Controls.SwitchButton();
+            this.advTree1 = new DevComponents.AdvTree.AdvTree();
+            this.columnHeader1 = new DevComponents.AdvTree.ColumnHeader();
+            this.columnHeader2 = new DevComponents.AdvTree.ColumnHeader();
+            this.columnHeader3 = new DevComponents.AdvTree.ColumnHeader();
+            this.columnHeader4 = new DevComponents.AdvTree.ColumnHeader();
+            this.columnHeader5 = new DevComponents.AdvTree.ColumnHeader();
+            this.columnHeader6 = new DevComponents.AdvTree.ColumnHeader();
+            this.nodeConnector1 = new DevComponents.AdvTree.NodeConnector();
+            this.elementStyle1 = new DevComponents.DotNetBar.ElementStyle();
             this.dockContainerItem2 = new DevComponents.DotNetBar.DockContainerItem();
             this.dockSite1 = new DevComponents.DotNetBar.DockSite();
             this.bar1 = new DevComponents.DotNetBar.Bar();
             this.panelDockContainer1 = new DevComponents.DotNetBar.PanelDockContainer();
+            this.advTree2 = new DevComponents.AdvTree.AdvTree();
+            this.node1 = new DevComponents.AdvTree.Node();
+            this.nodeConnector2 = new DevComponents.AdvTree.NodeConnector();
+            this.elementStyle2 = new DevComponents.DotNetBar.ElementStyle();
             this.dockContainerItem1 = new DevComponents.DotNetBar.DockContainerItem();
             this.dockSite2 = new DevComponents.DotNetBar.DockSite();
             this.bar2 = new DevComponents.DotNetBar.Bar();
@@ -60,39 +81,25 @@
             this.buttonX1 = new DevComponents.DotNetBar.ButtonX();
             this.dockSite9 = new DevComponents.DotNetBar.DockSite();
             this.bar4 = new DevComponents.DotNetBar.Bar();
-            this.dockContainerItem4 = new DevComponents.DotNetBar.DockContainerItem();
-            this.scintilla1 = new ScintillaNet.Scintilla();
             this.panelDockContainer4 = new DevComponents.DotNetBar.PanelDockContainer();
-            this.advTree1 = new DevComponents.AdvTree.AdvTree();
-            this.nodeConnector1 = new DevComponents.AdvTree.NodeConnector();
-            this.elementStyle1 = new DevComponents.DotNetBar.ElementStyle();
-            this.columnHeader1 = new DevComponents.AdvTree.ColumnHeader();
-            this.columnHeader2 = new DevComponents.AdvTree.ColumnHeader();
-            this.columnHeader3 = new DevComponents.AdvTree.ColumnHeader();
-            this.columnHeader4 = new DevComponents.AdvTree.ColumnHeader();
-            this.columnHeader5 = new DevComponents.AdvTree.ColumnHeader();
-            this.columnHeader6 = new DevComponents.AdvTree.ColumnHeader();
-            this.splitContainer1 = new System.Windows.Forms.SplitContainer();
-            this.switchButton1 = new DevComponents.DotNetBar.Controls.SwitchButton();
-            this.switchButton2 = new DevComponents.DotNetBar.Controls.SwitchButton();
-            this.switchButton3 = new DevComponents.DotNetBar.Controls.SwitchButton();
-            this.advTree2 = new DevComponents.AdvTree.AdvTree();
-            this.node1 = new DevComponents.AdvTree.Node();
-            this.nodeConnector2 = new DevComponents.AdvTree.NodeConnector();
-            this.elementStyle2 = new DevComponents.DotNetBar.ElementStyle();
-            this.ribbonBar2 = new DevComponents.DotNetBar.RibbonBar();
-            this.buttonItem2 = new DevComponents.DotNetBar.ButtonItem();
-            this.buttonItem3 = new DevComponents.DotNetBar.ButtonItem();
+            this.scintilla1 = new ScintillaNet.Scintilla();
+            this.dockContainerItem4 = new DevComponents.DotNetBar.DockContainerItem();
             this.ribbonControl1.SuspendLayout();
             this.ribbonPanel1.SuspendLayout();
             this.dockSite4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.bar5)).BeginInit();
             this.bar5.SuspendLayout();
             this.panelDockContainer2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).BeginInit();
+            this.splitContainer1.Panel1.SuspendLayout();
+            this.splitContainer1.Panel2.SuspendLayout();
+            this.splitContainer1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.advTree1)).BeginInit();
             this.dockSite1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.bar1)).BeginInit();
             this.bar1.SuspendLayout();
             this.panelDockContainer1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.advTree2)).BeginInit();
             this.dockSite2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.bar2)).BeginInit();
             this.bar2.SuspendLayout();
@@ -100,14 +107,8 @@
             this.dockSite9.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.bar4)).BeginInit();
             this.bar4.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.scintilla1)).BeginInit();
             this.panelDockContainer4.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.advTree1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).BeginInit();
-            this.splitContainer1.Panel1.SuspendLayout();
-            this.splitContainer1.Panel2.SuspendLayout();
-            this.splitContainer1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.advTree2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.scintilla1)).BeginInit();
             this.SuspendLayout();
             // 
             // ribbonControl1
@@ -177,6 +178,59 @@
             this.ribbonPanel1.StyleMouseOver.Class = "";
             this.ribbonPanel1.StyleMouseOver.CornerType = DevComponents.DotNetBar.eCornerType.Square;
             this.ribbonPanel1.TabIndex = 1;
+            // 
+            // ribbonBar2
+            // 
+            this.ribbonBar2.AutoOverflowEnabled = true;
+            // 
+            // 
+            // 
+            this.ribbonBar2.BackgroundMouseOverStyle.Class = "";
+            this.ribbonBar2.BackgroundMouseOverStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
+            // 
+            // 
+            // 
+            this.ribbonBar2.BackgroundStyle.Class = "";
+            this.ribbonBar2.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
+            this.ribbonBar2.ContainerControlProcessDialogKey = true;
+            this.ribbonBar2.Dock = System.Windows.Forms.DockStyle.Left;
+            this.ribbonBar2.Items.AddRange(new DevComponents.DotNetBar.BaseItem[] {
+            this.buttonItem2,
+            this.buttonItem3});
+            this.ribbonBar2.Location = new System.Drawing.Point(3, 0);
+            this.ribbonBar2.Name = "ribbonBar2";
+            this.ribbonBar2.Size = new System.Drawing.Size(100, 96);
+            this.ribbonBar2.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
+            this.ribbonBar2.TabIndex = 0;
+            this.ribbonBar2.Text = "Plugin";
+            // 
+            // 
+            // 
+            this.ribbonBar2.TitleStyle.Class = "";
+            this.ribbonBar2.TitleStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
+            // 
+            // 
+            // 
+            this.ribbonBar2.TitleStyleMouseOver.Class = "";
+            this.ribbonBar2.TitleStyleMouseOver.CornerType = DevComponents.DotNetBar.eCornerType.Square;
+            // 
+            // buttonItem2
+            // 
+            this.buttonItem2.ButtonStyle = DevComponents.DotNetBar.eButtonStyle.ImageAndText;
+            this.buttonItem2.Image = global::Bukkit_Plugin_Writer.Properties.Resources.documents_32;
+            this.buttonItem2.ImagePosition = DevComponents.DotNetBar.eImagePosition.Top;
+            this.buttonItem2.Name = "buttonItem2";
+            this.buttonItem2.SubItemsExpandWidth = 14;
+            this.buttonItem2.Text = "New";
+            this.buttonItem2.Click += new System.EventHandler(this.buttonItem2_Click);
+            // 
+            // buttonItem3
+            // 
+            this.buttonItem3.Image = global::Bukkit_Plugin_Writer.Properties.Resources.folder_open_32;
+            this.buttonItem3.ImagePosition = DevComponents.DotNetBar.eImagePosition.Top;
+            this.buttonItem3.Name = "buttonItem3";
+            this.buttonItem3.SubItemsExpandWidth = 14;
+            this.buttonItem3.Text = "Open";
             // 
             // ribbonPanel2
             // 
@@ -335,6 +389,157 @@
             this.panelDockContainer2.Style.GradientAngle = 90;
             this.panelDockContainer2.TabIndex = 0;
             // 
+            // splitContainer1
+            // 
+            this.splitContainer1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.splitContainer1.IsSplitterFixed = true;
+            this.splitContainer1.Location = new System.Drawing.Point(0, 0);
+            this.splitContainer1.Name = "splitContainer1";
+            this.splitContainer1.Orientation = System.Windows.Forms.Orientation.Horizontal;
+            // 
+            // splitContainer1.Panel1
+            // 
+            this.splitContainer1.Panel1.Controls.Add(this.switchButton3);
+            this.splitContainer1.Panel1.Controls.Add(this.switchButton2);
+            this.splitContainer1.Panel1.Controls.Add(this.switchButton1);
+            this.splitContainer1.Panel1.Resize += new System.EventHandler(this.splitContainer1_Panel1_Resize);
+            // 
+            // splitContainer1.Panel2
+            // 
+            this.splitContainer1.Panel2.Controls.Add(this.advTree1);
+            this.splitContainer1.Size = new System.Drawing.Size(769, 113);
+            this.splitContainer1.SplitterDistance = 27;
+            this.splitContainer1.SplitterWidth = 1;
+            this.splitContainer1.TabIndex = 1;
+            this.splitContainer1.Resize += new System.EventHandler(this.splitContainer1_Resize);
+            // 
+            // switchButton3
+            // 
+            // 
+            // 
+            // 
+            this.switchButton3.BackgroundStyle.Class = "";
+            this.switchButton3.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
+            this.switchButton3.Location = new System.Drawing.Point(173, 3);
+            this.switchButton3.Name = "switchButton3";
+            this.switchButton3.OffText = "Messages";
+            this.switchButton3.OnText = "Messages";
+            this.switchButton3.Size = new System.Drawing.Size(88, 22);
+            this.switchButton3.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
+            this.switchButton3.TabIndex = 0;
+            this.switchButton3.Value = true;
+            // 
+            // switchButton2
+            // 
+            // 
+            // 
+            // 
+            this.switchButton2.BackgroundStyle.Class = "";
+            this.switchButton2.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
+            this.switchButton2.Location = new System.Drawing.Point(81, 3);
+            this.switchButton2.Name = "switchButton2";
+            this.switchButton2.OffText = "Warnings";
+            this.switchButton2.OnText = "Warnings";
+            this.switchButton2.Size = new System.Drawing.Size(86, 22);
+            this.switchButton2.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
+            this.switchButton2.TabIndex = 0;
+            this.switchButton2.Value = true;
+            // 
+            // switchButton1
+            // 
+            // 
+            // 
+            // 
+            this.switchButton1.BackgroundStyle.Class = "";
+            this.switchButton1.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
+            this.switchButton1.Location = new System.Drawing.Point(9, 3);
+            this.switchButton1.Name = "switchButton1";
+            this.switchButton1.OffText = "Errors";
+            this.switchButton1.OnText = "Errors";
+            this.switchButton1.Size = new System.Drawing.Size(66, 22);
+            this.switchButton1.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
+            this.switchButton1.TabIndex = 0;
+            this.switchButton1.Value = true;
+            // 
+            // advTree1
+            // 
+            this.advTree1.AccessibleRole = System.Windows.Forms.AccessibleRole.Outline;
+            this.advTree1.AllowDrop = true;
+            this.advTree1.BackColor = System.Drawing.SystemColors.Window;
+            // 
+            // 
+            // 
+            this.advTree1.BackgroundStyle.Class = "TreeBorderKey";
+            this.advTree1.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
+            this.advTree1.Columns.Add(this.columnHeader1);
+            this.advTree1.Columns.Add(this.columnHeader2);
+            this.advTree1.Columns.Add(this.columnHeader3);
+            this.advTree1.Columns.Add(this.columnHeader4);
+            this.advTree1.Columns.Add(this.columnHeader5);
+            this.advTree1.Columns.Add(this.columnHeader6);
+            this.advTree1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.advTree1.ExpandWidth = 0;
+            this.advTree1.GridLinesColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.advTree1.GridRowLines = true;
+            this.advTree1.Location = new System.Drawing.Point(0, 0);
+            this.advTree1.Name = "advTree1";
+            this.advTree1.NodesConnector = this.nodeConnector1;
+            this.advTree1.NodeStyle = this.elementStyle1;
+            this.advTree1.PathSeparator = ";";
+            this.advTree1.Size = new System.Drawing.Size(769, 85);
+            this.advTree1.Styles.Add(this.elementStyle1);
+            this.advTree1.TabIndex = 0;
+            this.advTree1.Text = "advTree1";
+            // 
+            // columnHeader1
+            // 
+            this.columnHeader1.Name = "columnHeader1";
+            this.columnHeader1.Width.Absolute = 20;
+            // 
+            // columnHeader2
+            // 
+            this.columnHeader2.Name = "columnHeader2";
+            this.columnHeader2.Width.Absolute = 15;
+            // 
+            // columnHeader3
+            // 
+            this.columnHeader3.ColumnName = "Description";
+            this.columnHeader3.Name = "columnHeader3";
+            this.columnHeader3.Text = "Description";
+            this.columnHeader3.Width.Absolute = 400;
+            // 
+            // columnHeader4
+            // 
+            this.columnHeader4.ColumnName = "File";
+            this.columnHeader4.Name = "columnHeader4";
+            this.columnHeader4.Text = "File";
+            this.columnHeader4.Width.Absolute = 125;
+            // 
+            // columnHeader5
+            // 
+            this.columnHeader5.ColumnName = "Line";
+            this.columnHeader5.Name = "columnHeader5";
+            this.columnHeader5.Text = "Line";
+            this.columnHeader5.Width.Absolute = 60;
+            // 
+            // columnHeader6
+            // 
+            this.columnHeader6.ColumnName = "Column";
+            this.columnHeader6.Name = "columnHeader6";
+            this.columnHeader6.Text = "Column";
+            this.columnHeader6.Width.Absolute = 60;
+            // 
+            // nodeConnector1
+            // 
+            this.nodeConnector1.LineColor = System.Drawing.SystemColors.ControlText;
+            // 
+            // elementStyle1
+            // 
+            this.elementStyle1.Class = "";
+            this.elementStyle1.CornerType = DevComponents.DotNetBar.eCornerType.Square;
+            this.elementStyle1.Name = "elementStyle1";
+            this.elementStyle1.TextColor = System.Drawing.SystemColors.ControlText;
+            // 
             // dockContainerItem2
             // 
             this.dockContainerItem2.Control = this.panelDockContainer2;
@@ -389,6 +594,46 @@
             this.panelDockContainer1.Style.ForeColor.ColorSchemePart = DevComponents.DotNetBar.eColorSchemePart.ItemText;
             this.panelDockContainer1.Style.GradientAngle = 90;
             this.panelDockContainer1.TabIndex = 0;
+            // 
+            // advTree2
+            // 
+            this.advTree2.AccessibleRole = System.Windows.Forms.AccessibleRole.Outline;
+            this.advTree2.AllowDrop = true;
+            this.advTree2.BackColor = System.Drawing.SystemColors.Window;
+            // 
+            // 
+            // 
+            this.advTree2.BackgroundStyle.Class = "TreeBorderKey";
+            this.advTree2.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
+            this.advTree2.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.advTree2.Location = new System.Drawing.Point(0, 0);
+            this.advTree2.Name = "advTree2";
+            this.advTree2.Nodes.AddRange(new DevComponents.AdvTree.Node[] {
+            this.node1});
+            this.advTree2.NodesConnector = this.nodeConnector2;
+            this.advTree2.NodeStyle = this.elementStyle2;
+            this.advTree2.PathSeparator = ";";
+            this.advTree2.Size = new System.Drawing.Size(161, 152);
+            this.advTree2.Styles.Add(this.elementStyle2);
+            this.advTree2.TabIndex = 0;
+            this.advTree2.Text = "advTree2";
+            // 
+            // node1
+            // 
+            this.node1.Expanded = true;
+            this.node1.Name = "node1";
+            this.node1.Text = "node1";
+            // 
+            // nodeConnector2
+            // 
+            this.nodeConnector2.LineColor = System.Drawing.SystemColors.ControlText;
+            // 
+            // elementStyle2
+            // 
+            this.elementStyle2.Class = "";
+            this.elementStyle2.CornerType = DevComponents.DotNetBar.eCornerType.Square;
+            this.elementStyle2.Name = "elementStyle2";
+            this.elementStyle2.TextColor = System.Drawing.SystemColors.ControlText;
             // 
             // dockContainerItem1
             // 
@@ -574,11 +819,19 @@
             this.bar4.TabNavigation = true;
             this.bar4.TabStop = false;
             // 
-            // dockContainerItem4
+            // panelDockContainer4
             // 
-            this.dockContainerItem4.Control = this.panelDockContainer4;
-            this.dockContainerItem4.Name = "dockContainerItem4";
-            this.dockContainerItem4.Text = "Open";
+            this.panelDockContainer4.ColorSchemeStyle = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
+            this.panelDockContainer4.Controls.Add(this.scintilla1);
+            this.panelDockContainer4.Location = new System.Drawing.Point(3, 28);
+            this.panelDockContainer4.Name = "panelDockContainer4";
+            this.panelDockContainer4.Size = new System.Drawing.Size(377, 147);
+            this.panelDockContainer4.Style.Alignment = System.Drawing.StringAlignment.Center;
+            this.panelDockContainer4.Style.BackColor1.ColorSchemePart = DevComponents.DotNetBar.eColorSchemePart.BarBackground;
+            this.panelDockContainer4.Style.BorderColor.ColorSchemePart = DevComponents.DotNetBar.eColorSchemePart.BarDockedBorder;
+            this.panelDockContainer4.Style.ForeColor.ColorSchemePart = DevComponents.DotNetBar.eColorSchemePart.ItemText;
+            this.panelDockContainer4.Style.GradientAngle = 90;
+            this.panelDockContainer4.TabIndex = 0;
             // 
             // scintilla1
             // 
@@ -607,263 +860,11 @@
             this.scintilla1.Styles.Max.FontName = "Verdana";
             this.scintilla1.TabIndex = 0;
             // 
-            // panelDockContainer4
-            // 
-            this.panelDockContainer4.ColorSchemeStyle = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
-            this.panelDockContainer4.Controls.Add(this.scintilla1);
-            this.panelDockContainer4.Location = new System.Drawing.Point(3, 28);
-            this.panelDockContainer4.Name = "panelDockContainer4";
-            this.panelDockContainer4.Size = new System.Drawing.Size(377, 147);
-            this.panelDockContainer4.Style.Alignment = System.Drawing.StringAlignment.Center;
-            this.panelDockContainer4.Style.BackColor1.ColorSchemePart = DevComponents.DotNetBar.eColorSchemePart.BarBackground;
-            this.panelDockContainer4.Style.BorderColor.ColorSchemePart = DevComponents.DotNetBar.eColorSchemePart.BarDockedBorder;
-            this.panelDockContainer4.Style.ForeColor.ColorSchemePart = DevComponents.DotNetBar.eColorSchemePart.ItemText;
-            this.panelDockContainer4.Style.GradientAngle = 90;
-            this.panelDockContainer4.TabIndex = 0;
-            // 
-            // advTree1
-            // 
-            this.advTree1.AccessibleRole = System.Windows.Forms.AccessibleRole.Outline;
-            this.advTree1.AllowDrop = true;
-            this.advTree1.BackColor = System.Drawing.SystemColors.Window;
-            // 
-            // 
-            // 
-            this.advTree1.BackgroundStyle.Class = "TreeBorderKey";
-            this.advTree1.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
-            this.advTree1.Columns.Add(this.columnHeader1);
-            this.advTree1.Columns.Add(this.columnHeader2);
-            this.advTree1.Columns.Add(this.columnHeader3);
-            this.advTree1.Columns.Add(this.columnHeader4);
-            this.advTree1.Columns.Add(this.columnHeader5);
-            this.advTree1.Columns.Add(this.columnHeader6);
-            this.advTree1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.advTree1.ExpandWidth = 0;
-            this.advTree1.GridLinesColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.advTree1.GridRowLines = true;
-            this.advTree1.Location = new System.Drawing.Point(0, 0);
-            this.advTree1.Name = "advTree1";
-            this.advTree1.NodesConnector = this.nodeConnector1;
-            this.advTree1.NodeStyle = this.elementStyle1;
-            this.advTree1.PathSeparator = ";";
-            this.advTree1.Size = new System.Drawing.Size(769, 85);
-            this.advTree1.Styles.Add(this.elementStyle1);
-            this.advTree1.TabIndex = 0;
-            this.advTree1.Text = "advTree1";
-            // 
-            // nodeConnector1
-            // 
-            this.nodeConnector1.LineColor = System.Drawing.SystemColors.ControlText;
-            // 
-            // elementStyle1
-            // 
-            this.elementStyle1.Class = "";
-            this.elementStyle1.CornerType = DevComponents.DotNetBar.eCornerType.Square;
-            this.elementStyle1.Name = "elementStyle1";
-            this.elementStyle1.TextColor = System.Drawing.SystemColors.ControlText;
-            // 
-            // columnHeader1
-            // 
-            this.columnHeader1.Name = "columnHeader1";
-            this.columnHeader1.Width.Absolute = 20;
-            // 
-            // columnHeader2
-            // 
-            this.columnHeader2.Name = "columnHeader2";
-            this.columnHeader2.Width.Absolute = 15;
-            // 
-            // columnHeader3
-            // 
-            this.columnHeader3.ColumnName = "Description";
-            this.columnHeader3.Name = "columnHeader3";
-            this.columnHeader3.Text = "Description";
-            this.columnHeader3.Width.Absolute = 400;
-            // 
-            // columnHeader4
-            // 
-            this.columnHeader4.ColumnName = "File";
-            this.columnHeader4.Name = "columnHeader4";
-            this.columnHeader4.Text = "File";
-            this.columnHeader4.Width.Absolute = 125;
-            // 
-            // columnHeader5
-            // 
-            this.columnHeader5.ColumnName = "Line";
-            this.columnHeader5.Name = "columnHeader5";
-            this.columnHeader5.Text = "Line";
-            this.columnHeader5.Width.Absolute = 60;
-            // 
-            // columnHeader6
-            // 
-            this.columnHeader6.ColumnName = "Column";
-            this.columnHeader6.Name = "columnHeader6";
-            this.columnHeader6.Text = "Column";
-            this.columnHeader6.Width.Absolute = 60;
-            // 
-            // splitContainer1
-            // 
-            this.splitContainer1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.splitContainer1.IsSplitterFixed = true;
-            this.splitContainer1.Location = new System.Drawing.Point(0, 0);
-            this.splitContainer1.Name = "splitContainer1";
-            this.splitContainer1.Orientation = System.Windows.Forms.Orientation.Horizontal;
-            // 
-            // splitContainer1.Panel1
-            // 
-            this.splitContainer1.Panel1.Controls.Add(this.switchButton3);
-            this.splitContainer1.Panel1.Controls.Add(this.switchButton2);
-            this.splitContainer1.Panel1.Controls.Add(this.switchButton1);
-            this.splitContainer1.Panel1.Resize += new System.EventHandler(this.splitContainer1_Panel1_Resize);
-            // 
-            // splitContainer1.Panel2
-            // 
-            this.splitContainer1.Panel2.Controls.Add(this.advTree1);
-            this.splitContainer1.Size = new System.Drawing.Size(769, 113);
-            this.splitContainer1.SplitterDistance = 27;
-            this.splitContainer1.SplitterWidth = 1;
-            this.splitContainer1.TabIndex = 1;
-            this.splitContainer1.Resize += new System.EventHandler(this.splitContainer1_Resize);
-            // 
-            // switchButton1
-            // 
-            // 
-            // 
-            // 
-            this.switchButton1.BackgroundStyle.Class = "";
-            this.switchButton1.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
-            this.switchButton1.Location = new System.Drawing.Point(9, 3);
-            this.switchButton1.Name = "switchButton1";
-            this.switchButton1.OffText = "Errors";
-            this.switchButton1.OnText = "Errors";
-            this.switchButton1.Size = new System.Drawing.Size(66, 22);
-            this.switchButton1.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
-            this.switchButton1.TabIndex = 0;
-            this.switchButton1.Value = true;
-            // 
-            // switchButton2
-            // 
-            // 
-            // 
-            // 
-            this.switchButton2.BackgroundStyle.Class = "";
-            this.switchButton2.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
-            this.switchButton2.Location = new System.Drawing.Point(81, 3);
-            this.switchButton2.Name = "switchButton2";
-            this.switchButton2.OffText = "Warnings";
-            this.switchButton2.OnText = "Warnings";
-            this.switchButton2.Size = new System.Drawing.Size(86, 22);
-            this.switchButton2.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
-            this.switchButton2.TabIndex = 0;
-            this.switchButton2.Value = true;
-            // 
-            // switchButton3
-            // 
-            // 
-            // 
-            // 
-            this.switchButton3.BackgroundStyle.Class = "";
-            this.switchButton3.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
-            this.switchButton3.Location = new System.Drawing.Point(173, 3);
-            this.switchButton3.Name = "switchButton3";
-            this.switchButton3.OffText = "Messages";
-            this.switchButton3.OnText = "Messages";
-            this.switchButton3.Size = new System.Drawing.Size(88, 22);
-            this.switchButton3.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
-            this.switchButton3.TabIndex = 0;
-            this.switchButton3.Value = true;
-            // 
-            // advTree2
-            // 
-            this.advTree2.AccessibleRole = System.Windows.Forms.AccessibleRole.Outline;
-            this.advTree2.AllowDrop = true;
-            this.advTree2.BackColor = System.Drawing.SystemColors.Window;
-            // 
-            // 
-            // 
-            this.advTree2.BackgroundStyle.Class = "TreeBorderKey";
-            this.advTree2.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
-            this.advTree2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.advTree2.Location = new System.Drawing.Point(0, 0);
-            this.advTree2.Name = "advTree2";
-            this.advTree2.Nodes.AddRange(new DevComponents.AdvTree.Node[] {
-            this.node1});
-            this.advTree2.NodesConnector = this.nodeConnector2;
-            this.advTree2.NodeStyle = this.elementStyle2;
-            this.advTree2.PathSeparator = ";";
-            this.advTree2.Size = new System.Drawing.Size(161, 152);
-            this.advTree2.Styles.Add(this.elementStyle2);
-            this.advTree2.TabIndex = 0;
-            this.advTree2.Text = "advTree2";
-            // 
-            // node1
-            // 
-            this.node1.Expanded = true;
-            this.node1.Name = "node1";
-            this.node1.Text = "node1";
-            // 
-            // nodeConnector2
-            // 
-            this.nodeConnector2.LineColor = System.Drawing.SystemColors.ControlText;
-            // 
-            // elementStyle2
-            // 
-            this.elementStyle2.Class = "";
-            this.elementStyle2.CornerType = DevComponents.DotNetBar.eCornerType.Square;
-            this.elementStyle2.Name = "elementStyle2";
-            this.elementStyle2.TextColor = System.Drawing.SystemColors.ControlText;
-            // 
-            // ribbonBar2
-            // 
-            this.ribbonBar2.AutoOverflowEnabled = true;
-            // 
-            // 
-            // 
-            this.ribbonBar2.BackgroundMouseOverStyle.Class = "";
-            this.ribbonBar2.BackgroundMouseOverStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
-            // 
-            // 
-            // 
-            this.ribbonBar2.BackgroundStyle.Class = "";
-            this.ribbonBar2.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
-            this.ribbonBar2.ContainerControlProcessDialogKey = true;
-            this.ribbonBar2.Dock = System.Windows.Forms.DockStyle.Left;
-            this.ribbonBar2.Items.AddRange(new DevComponents.DotNetBar.BaseItem[] {
-            this.buttonItem2,
-            this.buttonItem3});
-            this.ribbonBar2.Location = new System.Drawing.Point(3, 0);
-            this.ribbonBar2.Name = "ribbonBar2";
-            this.ribbonBar2.Size = new System.Drawing.Size(100, 96);
-            this.ribbonBar2.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
-            this.ribbonBar2.TabIndex = 0;
-            this.ribbonBar2.Text = "Plugin";
-            // 
-            // 
-            // 
-            this.ribbonBar2.TitleStyle.Class = "";
-            this.ribbonBar2.TitleStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
-            // 
-            // 
-            // 
-            this.ribbonBar2.TitleStyleMouseOver.Class = "";
-            this.ribbonBar2.TitleStyleMouseOver.CornerType = DevComponents.DotNetBar.eCornerType.Square;
-            // 
-            // buttonItem2
-            // 
-            this.buttonItem2.ButtonStyle = DevComponents.DotNetBar.eButtonStyle.ImageAndText;
-            this.buttonItem2.Image = global::Bukkit_Plugin_Writer.Properties.Resources.documents_32;
-            this.buttonItem2.ImagePosition = DevComponents.DotNetBar.eImagePosition.Top;
-            this.buttonItem2.Name = "buttonItem2";
-            this.buttonItem2.SubItemsExpandWidth = 14;
-            this.buttonItem2.Text = "New";
-            this.buttonItem2.Click += new System.EventHandler(this.buttonItem2_Click);
-            // 
-            // buttonItem3
-            // 
-            this.buttonItem3.Image = global::Bukkit_Plugin_Writer.Properties.Resources.folder_open_32;
-            this.buttonItem3.ImagePosition = DevComponents.DotNetBar.eImagePosition.Top;
-            this.buttonItem3.Name = "buttonItem3";
-            this.buttonItem3.SubItemsExpandWidth = 14;
-            this.buttonItem3.Text = "Open";
+            // dockContainerItem4
+            // 
+            this.dockContainerItem4.Control = this.panelDockContainer4;
+            this.dockContainerItem4.Name = "dockContainerItem4";
+            this.dockContainerItem4.Text = "Open";
             // 
             // Form1
             // 
@@ -880,6 +881,7 @@
             this.Controls.Add(this.dockSite6);
             this.Controls.Add(this.dockSite7);
             this.Controls.Add(this.dockSite8);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Form1";
             this.Text = "Bukkit Plugin Writer";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
@@ -890,10 +892,16 @@
             ((System.ComponentModel.ISupportInitialize)(this.bar5)).EndInit();
             this.bar5.ResumeLayout(false);
             this.panelDockContainer2.ResumeLayout(false);
+            this.splitContainer1.Panel1.ResumeLayout(false);
+            this.splitContainer1.Panel2.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).EndInit();
+            this.splitContainer1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.advTree1)).EndInit();
             this.dockSite1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.bar1)).EndInit();
             this.bar1.ResumeLayout(false);
             this.panelDockContainer1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.advTree2)).EndInit();
             this.dockSite2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.bar2)).EndInit();
             this.bar2.ResumeLayout(false);
@@ -901,14 +909,8 @@
             this.dockSite9.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.bar4)).EndInit();
             this.bar4.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.scintilla1)).EndInit();
             this.panelDockContainer4.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.advTree1)).EndInit();
-            this.splitContainer1.Panel1.ResumeLayout(false);
-            this.splitContainer1.Panel2.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).EndInit();
-            this.splitContainer1.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.advTree2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.scintilla1)).EndInit();
             this.ResumeLayout(false);
 
         }

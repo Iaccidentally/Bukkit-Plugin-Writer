@@ -29,6 +29,7 @@ namespace Bukkit_Plugin_Writer
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(NewPlugin));
             this.styleManager1 = new DevComponents.DotNetBar.StyleManager(this.components);
             this.labelX1 = new DevComponents.DotNetBar.LabelX();
             this.pluginName = new DevComponents.DotNetBar.Controls.TextBoxX();
@@ -240,6 +241,7 @@ namespace Bukkit_Plugin_Writer
             this.Controls.Add(this.labelX2);
             this.Controls.Add(this.labelX1);
             this.DoubleBuffered = true;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "NewPlugin";
             this.Text = "New Plugin";
             this.ResumeLayout(false);
