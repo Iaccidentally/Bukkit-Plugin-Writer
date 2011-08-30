@@ -82,7 +82,7 @@ namespace Bukkit_Plugin_Writer
                      * such as src/org/bukkit/blah/blah/blah from the namespace given*/
                 }
                 StreamWriter pluginDotJava = new StreamWriter(a + Path.DirectorySeparatorChar + pluginName.Text + ".java");
-                pluginDotJava.WriteLine("package " + pluginNamespace.Text + "." + pluginName.Text);
+                pluginDotJava.WriteLine("package " + pluginNamespace.Text + "." + pluginName.Text +";");
                 pluginDotJava.WriteLine("\n");
                 //TODO Moar Imports here
                 pluginDotJava.WriteLine("import org.bukkit.plugin.java.*;");
@@ -114,7 +114,7 @@ namespace Bukkit_Plugin_Writer
                 //Add more includes if needed, for a basic plugin, I think only the JRE and Bukkit are required.
                 dotClassPath.WriteLine("</classpath>");
                 dotClassPath.Close();
-                this.sender.createEditorTab("");
+                this.sender.createEditorTab(a + Path.DirectorySeparatorChar + pluginName.Text + ".java");
             }
             else
             {

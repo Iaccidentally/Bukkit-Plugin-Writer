@@ -82,7 +82,6 @@
             this.dockSite9 = new DevComponents.DotNetBar.DockSite();
             this.bar4 = new DevComponents.DotNetBar.Bar();
             this.panelDockContainer4 = new DevComponents.DotNetBar.PanelDockContainer();
-            this.panelDockContainer5 = new DevComponents.DotNetBar.PanelDockContainer();
             this.dockContainerItem4 = new DevComponents.DotNetBar.DockContainerItem();
             this.dockContainerItem5 = new DevComponents.DotNetBar.DockContainerItem();
             this.webBrowser1 = new System.Windows.Forms.WebBrowser();
@@ -805,12 +804,10 @@
             this.bar4.CanHide = true;
             this.bar4.CanUndock = false;
             this.bar4.Controls.Add(this.panelDockContainer4);
-            this.bar4.Controls.Add(this.panelDockContainer5);
             this.bar4.DockTabAlignment = DevComponents.DotNetBar.eTabStripAlignment.Top;
             this.bar4.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bar4.Items.AddRange(new DevComponents.DotNetBar.BaseItem[] {
-            this.dockContainerItem4,
-            this.dockContainerItem5});
+            this.dockContainerItem4});
             this.bar4.LayoutType = DevComponents.DotNetBar.eLayoutType.DockContainer;
             this.bar4.Location = new System.Drawing.Point(0, 0);
             this.bar4.Name = "bar4";
@@ -836,19 +833,6 @@
             this.panelDockContainer4.Style.GradientAngle = 90;
             this.panelDockContainer4.TabIndex = 0;
             // 
-            // panelDockContainer5
-            // 
-            this.panelDockContainer5.ColorSchemeStyle = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
-            this.panelDockContainer5.Location = new System.Drawing.Point(3, 28);
-            this.panelDockContainer5.Name = "panelDockContainer5";
-            this.panelDockContainer5.Size = new System.Drawing.Size(377, 147);
-            this.panelDockContainer5.Style.Alignment = System.Drawing.StringAlignment.Center;
-            this.panelDockContainer5.Style.BackColor1.ColorSchemePart = DevComponents.DotNetBar.eColorSchemePart.BarBackground;
-            this.panelDockContainer5.Style.BorderColor.ColorSchemePart = DevComponents.DotNetBar.eColorSchemePart.BarDockedBorder;
-            this.panelDockContainer5.Style.ForeColor.ColorSchemePart = DevComponents.DotNetBar.eColorSchemePart.ItemText;
-            this.panelDockContainer5.Style.GradientAngle = 90;
-            this.panelDockContainer5.TabIndex = 2;
-            // 
             // dockContainerItem4
             // 
             this.dockContainerItem4.Control = this.panelDockContainer4;
@@ -857,7 +841,6 @@
             // 
             // dockContainerItem5
             // 
-            this.dockContainerItem5.Control = this.panelDockContainer5;
             this.dockContainerItem5.Name = "dockContainerItem5";
             this.dockContainerItem5.Text = "dockContainerItem5";
             // 
@@ -975,7 +958,6 @@
         private DevComponents.DotNetBar.RibbonBar ribbonBar2;
         private DevComponents.DotNetBar.ButtonItem buttonItem2;
         private DevComponents.DotNetBar.ButtonItem buttonItem3;
-        private DevComponents.DotNetBar.PanelDockContainer panelDockContainer5;
         private DevComponents.DotNetBar.DockContainerItem dockContainerItem5;
         private System.Windows.Forms.WebBrowser webBrowser1;
     }

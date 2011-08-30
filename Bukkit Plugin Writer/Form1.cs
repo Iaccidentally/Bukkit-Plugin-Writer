@@ -79,9 +79,16 @@ namespace Bukkit_Plugin_Writer
             tab.Control = container;
             bar4.Items.Add(tab);
             container.Controls.Add(scintilla);
+            tab.Text = "New File";
             if (Location != "")
             {
-
+                if(System.IO.File.Exists(Location))
+                {
+                    System.IO.StreamReader reader = new System.IO.StreamReader(Location);
+                    scintilla.Text = reader.ReadToEnd();
+                    reader.Close();
+                    tab.Text = Location.Split('\\')[Location.Split('\\').Count() - 1];
+                }
             }
         }
 
