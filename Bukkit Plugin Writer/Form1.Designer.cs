@@ -848,6 +848,7 @@
             this.scintilla1.Margins.Margin2.IsClickable = false;
             this.scintilla1.Margins.Margin2.IsFoldMargin = false;
             this.scintilla1.Name = "scintilla1";
+            this.scintilla1.Printing.PageSettings.Color = false;
             this.scintilla1.Size = new System.Drawing.Size(377, 147);
             this.scintilla1.Styles.Bits = 5;
             this.scintilla1.Styles.BraceBad.FontName = "Verdana";

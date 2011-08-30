@@ -98,6 +98,13 @@ namespace Bukkit_Plugin_Writer
                 pluginDotYML.WriteLine("version: " + pluginVersion.Text);
                 pluginDotYML.WriteLine("main: " + pluginNamespace.Text + "." + pluginName.Text);
                 pluginDotYML.Close();
+                StreamWriter dotClassPath = new StreamWriter(Location + Path.DirectorySeparatorChar + ".classpath");
+                dotClassPath.WriteLine("<?xml version=\"1.0\" encoding=\"UTF-8\"?>");
+                dotClassPath.WriteLine("<classpath>");
+                dotClassPath.WriteLine("    <classpathentry type=\"src\" path=\"src\"/>");
+                dotClassPath.WriteLine("    <classpathentry type=\"con\" path=\"org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-1.6\"/>");
+                dotClassPath.WriteLine("    <classpathentry type=
+                    //FIXME
             }
             else
             {
