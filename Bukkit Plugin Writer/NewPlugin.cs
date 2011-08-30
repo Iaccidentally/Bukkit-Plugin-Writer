@@ -63,9 +63,41 @@ namespace Bukkit_Plugin_Writer
                 }
                 Directory.CreateDirectory(Location);
                 StreamWriter bpwwriter = new StreamWriter(Location + ".bpw");
-                //Write config to file
+                //TODO Write project config to file
                 bpwwriter.Close();
-                
+                Directory.CreateDirectory(Location + Path.DirectorySeparatorChar + "src");
+                string[] plnamespace = pluginNamespace.Text.Split('.');
+                string a = Location + Path.DirectorySeparatorChar + "src"; 
+                foreach (string b in plnamespace)
+                {
+                    a += Path.DirectorySeparatorChar + b;
+                    Directory.CreateDirectory(a);
+
+                    /*Creates all of the subdirectories
+                     * such as src/org/bukkit/blah/blah/blah from the namespace given*/
+                }
+                StreamWriter pluginDotJava = new StreamWriter(a + Path.DirectorySeparatorChar + pluginName.Text + ".java");
+                pluginDotJava.WriteLine("package " + pluginNamespace.Text + "." + pluginName.Text);
+                pluginDotJava.WriteLine("\n");
+                //TODO Moar Imports here
+                pluginDotJava.WriteLine("import org.bukkit.plugin.java.*;");
+                pluginDotJava.WriteLine();
+                pluginDotJava.WriteLine("public class " + pluginName.Text + " extends JavaPlugin {");
+                pluginDotJava.WriteLine("    public void onDisable() { ");
+                pluginDotJava.WriteLine("        //Code that runs when your plugin is disabled");
+                pluginDotJava.WriteLine("    }");
+                pluginDotJava.WriteLine();
+                pluginDotJava.WriteLine("    public void onEnable() { ");
+                pluginDotJava.WriteLine("        //Code that runs when your plugin is enabled");
+                pluginDotJava.WriteLine("    }");
+                pluginDotJava.WriteLine("}");
+                pluginDotJava.WriteLine();
+                pluginDotJava.Close();
+                StreamWriter pluginDotYML = new StreamWriter(Location + Path.DirectorySeparatorChar + "plugin.yml");
+                pluginDotYML.WriteLine("name: " + pluginName.Text);
+                pluginDotYML.WriteLine("version: " + pluginVersion.Text);
+                pluginDotYML.WriteLine("main: " + pluginNamespace.Text + "." + pluginName.Text);
+                pluginDotYML.Close();
             }
             else
             {
