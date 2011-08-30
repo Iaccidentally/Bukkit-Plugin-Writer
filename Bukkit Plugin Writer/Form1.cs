@@ -6,6 +6,7 @@ using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Windows.Forms;
+using DevComponents.DotNetBar;
 namespace Bukkit_Plugin_Writer
 {
     public partial class Form1 : DevComponents.DotNetBar.Office2007RibbonForm
@@ -46,6 +47,44 @@ namespace Bukkit_Plugin_Writer
             }
         }
 
+        public void createEditorTab(string Location)
+        {
+            ScintillaNet.Scintilla scintilla = new ScintillaNet.Scintilla();
+            scintilla.Caret.BlinkRate = 500;
+            scintilla.ConfigurationManager.CustomLocation = "C:\\Program Files\\Bukkit Plugin Writer\\code highlighting.xml";
+            scintilla.ConfigurationManager.Language = "java";
+            scintilla.Dock = System.Windows.Forms.DockStyle.Fill;
+            scintilla.Folding.IsEnabled = false;
+            scintilla.Indentation.TabWidth = 4;
+            scintilla.Indentation.UseTabs = false;
+            scintilla.Location = new System.Drawing.Point(0, 0);
+            scintilla.Margins.Margin0.Width = 20;
+            scintilla.Margins.Margin2.IsClickable = false;
+            scintilla.Margins.Margin2.IsFoldMargin = false;
+            scintilla.Name = "scintilla1";
+            scintilla.Printing.PageSettings.Color = false;
+            scintilla.Size = new System.Drawing.Size(377, 147);
+            scintilla.Styles.Bits = 5;
+            scintilla.Styles.BraceBad.FontName = "Verdana";
+            scintilla.Styles.BraceLight.FontName = "Verdana";
+            scintilla.Styles.ControlChar.FontName = "Verdana";
+            scintilla.Styles.Default.FontName = "Verdana";
+            scintilla.Styles.IndentGuide.FontName = "Verdana";
+            scintilla.Styles.LastPredefined.FontName = "Verdana";
+            scintilla.Styles.LineNumber.FontName = "Verdana";
+            scintilla.Styles.Max.FontName = "Verdana";
+            scintilla.TabIndex = 0;
+            DockContainerItem tab = new DockContainerItem();
+            PanelDockContainer container = new PanelDockContainer();
+            tab.Control = container;
+            bar4.Items.Add(tab);
+            container.Controls.Add(scintilla);
+            if (Location != "")
+            {
+
+            }
+        }
+
         private void splitContainer1_Panel1_Resize(object sender, EventArgs e)
         {
 
@@ -58,7 +97,7 @@ namespace Bukkit_Plugin_Writer
 
         private void buttonItem2_Click(object sender, EventArgs e)
         {
-            (new NewPlugin()).ShowDialog(this);
+            (new NewPlugin(this)).ShowDialog(this);
         }
     }
 }

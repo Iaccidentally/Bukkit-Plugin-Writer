@@ -12,9 +12,11 @@ namespace Bukkit_Plugin_Writer
 {
     public partial class NewPlugin : DevComponents.DotNetBar.Office2007Form
     {
-        public NewPlugin()
+        Form1 sender;
+        public NewPlugin(Form1 sender)
         {
             InitializeComponent();
+            this.sender = sender;
             pluginFolder.Text = System.Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments) + Path.DirectorySeparatorChar + "Bukkit Plugins";
         }
 
@@ -59,7 +61,10 @@ namespace Bukkit_Plugin_Writer
                     if (MessageBox.Show("The folder that you have specified already has a plugin by that name, if you click yes it will be deleted. Continue?", "Warning!!", MessageBoxButtons.YesNo, MessageBoxIcon.None, MessageBoxDefaultButton.Button2) == System.Windows.Forms.DialogResult.No)
                         return;
                     else
+                    {
                         Directory.Delete(Location);
+                        File.Delete(Location + ".bpw");
+                    }
                 }
                 Directory.CreateDirectory(Location);
                 StreamWriter bpwwriter = new StreamWriter(Location + ".bpw");
@@ -99,12 +104,17 @@ namespace Bukkit_Plugin_Writer
                 pluginDotYML.WriteLine("main: " + pluginNamespace.Text + "." + pluginName.Text);
                 pluginDotYML.Close();
                 StreamWriter dotClassPath = new StreamWriter(Location + Path.DirectorySeparatorChar + ".classpath");
+                //I have set this up the same way eclipse does it, but I am beginning to think this is not neccesary.. I know nothing about compiling java.
+                //I will test and see if it works and these dependencies aren't required.
                 dotClassPath.WriteLine("<?xml version=\"1.0\" encoding=\"UTF-8\"?>");
                 dotClassPath.WriteLine("<classpath>");
                 dotClassPath.WriteLine("    <classpathentry type=\"src\" path=\"src\"/>");
                 dotClassPath.WriteLine("    <classpathentry type=\"con\" path=\"org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-1.6\"/>");
-                dotClassPath.WriteLine("    <classpathentry type=
-                    //FIXME
+                dotClassPath.WriteLine("    <classpathentry type=\"lib\" path=\"C:\\Program Files\\Bukkit Plugin Writer\\jars\\bukkit.jar\"/>");
+                //Add more includes if needed, for a basic plugin, I think only the JRE and Bukkit are required.
+                dotClassPath.WriteLine("</classpath>");
+                dotClassPath.Close();
+                this.sender.createEditorTab("");
             }
             else
             {

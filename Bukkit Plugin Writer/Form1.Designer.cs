@@ -82,8 +82,10 @@
             this.dockSite9 = new DevComponents.DotNetBar.DockSite();
             this.bar4 = new DevComponents.DotNetBar.Bar();
             this.panelDockContainer4 = new DevComponents.DotNetBar.PanelDockContainer();
-            this.scintilla1 = new ScintillaNet.Scintilla();
+            this.panelDockContainer5 = new DevComponents.DotNetBar.PanelDockContainer();
             this.dockContainerItem4 = new DevComponents.DotNetBar.DockContainerItem();
+            this.dockContainerItem5 = new DevComponents.DotNetBar.DockContainerItem();
+            this.webBrowser1 = new System.Windows.Forms.WebBrowser();
             this.ribbonControl1.SuspendLayout();
             this.ribbonPanel1.SuspendLayout();
             this.dockSite4.SuspendLayout();
@@ -108,7 +110,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.bar4)).BeginInit();
             this.bar4.SuspendLayout();
             this.panelDockContainer4.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.scintilla1)).BeginInit();
             this.SuspendLayout();
             // 
             // ribbonControl1
@@ -804,10 +805,12 @@
             this.bar4.CanHide = true;
             this.bar4.CanUndock = false;
             this.bar4.Controls.Add(this.panelDockContainer4);
+            this.bar4.Controls.Add(this.panelDockContainer5);
             this.bar4.DockTabAlignment = DevComponents.DotNetBar.eTabStripAlignment.Top;
             this.bar4.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bar4.Items.AddRange(new DevComponents.DotNetBar.BaseItem[] {
-            this.dockContainerItem4});
+            this.dockContainerItem4,
+            this.dockContainerItem5});
             this.bar4.LayoutType = DevComponents.DotNetBar.eLayoutType.DockContainer;
             this.bar4.Location = new System.Drawing.Point(0, 0);
             this.bar4.Name = "bar4";
@@ -822,7 +825,7 @@
             // panelDockContainer4
             // 
             this.panelDockContainer4.ColorSchemeStyle = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
-            this.panelDockContainer4.Controls.Add(this.scintilla1);
+            this.panelDockContainer4.Controls.Add(this.webBrowser1);
             this.panelDockContainer4.Location = new System.Drawing.Point(3, 28);
             this.panelDockContainer4.Name = "panelDockContainer4";
             this.panelDockContainer4.Size = new System.Drawing.Size(377, 147);
@@ -833,39 +836,42 @@
             this.panelDockContainer4.Style.GradientAngle = 90;
             this.panelDockContainer4.TabIndex = 0;
             // 
-            // scintilla1
+            // panelDockContainer5
             // 
-            this.scintilla1.Caret.BlinkRate = 500;
-            this.scintilla1.ConfigurationManager.CustomLocation = "C:\\Users\\Dave\\documents\\visual studio 2010\\Projects\\Bukkit Plugin Writer\\Bukkit P" +
-                "lugin Writer\\ScintillaNET.xml";
-            this.scintilla1.ConfigurationManager.Language = "java";
-            this.scintilla1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.scintilla1.Folding.IsEnabled = false;
-            this.scintilla1.Indentation.TabWidth = 4;
-            this.scintilla1.Indentation.UseTabs = false;
-            this.scintilla1.Location = new System.Drawing.Point(0, 0);
-            this.scintilla1.Margins.Margin0.Width = 20;
-            this.scintilla1.Margins.Margin2.IsClickable = false;
-            this.scintilla1.Margins.Margin2.IsFoldMargin = false;
-            this.scintilla1.Name = "scintilla1";
-            this.scintilla1.Printing.PageSettings.Color = false;
-            this.scintilla1.Size = new System.Drawing.Size(377, 147);
-            this.scintilla1.Styles.Bits = 5;
-            this.scintilla1.Styles.BraceBad.FontName = "Verdana";
-            this.scintilla1.Styles.BraceLight.FontName = "Verdana";
-            this.scintilla1.Styles.ControlChar.FontName = "Verdana";
-            this.scintilla1.Styles.Default.FontName = "Verdana";
-            this.scintilla1.Styles.IndentGuide.FontName = "Verdana";
-            this.scintilla1.Styles.LastPredefined.FontName = "Verdana";
-            this.scintilla1.Styles.LineNumber.FontName = "Verdana";
-            this.scintilla1.Styles.Max.FontName = "Verdana";
-            this.scintilla1.TabIndex = 0;
+            this.panelDockContainer5.ColorSchemeStyle = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
+            this.panelDockContainer5.Location = new System.Drawing.Point(3, 28);
+            this.panelDockContainer5.Name = "panelDockContainer5";
+            this.panelDockContainer5.Size = new System.Drawing.Size(377, 147);
+            this.panelDockContainer5.Style.Alignment = System.Drawing.StringAlignment.Center;
+            this.panelDockContainer5.Style.BackColor1.ColorSchemePart = DevComponents.DotNetBar.eColorSchemePart.BarBackground;
+            this.panelDockContainer5.Style.BorderColor.ColorSchemePart = DevComponents.DotNetBar.eColorSchemePart.BarDockedBorder;
+            this.panelDockContainer5.Style.ForeColor.ColorSchemePart = DevComponents.DotNetBar.eColorSchemePart.ItemText;
+            this.panelDockContainer5.Style.GradientAngle = 90;
+            this.panelDockContainer5.TabIndex = 2;
             // 
             // dockContainerItem4
             // 
             this.dockContainerItem4.Control = this.panelDockContainer4;
             this.dockContainerItem4.Name = "dockContainerItem4";
-            this.dockContainerItem4.Text = "Open";
+            this.dockContainerItem4.Text = "Home Page";
+            // 
+            // dockContainerItem5
+            // 
+            this.dockContainerItem5.Control = this.panelDockContainer5;
+            this.dockContainerItem5.Name = "dockContainerItem5";
+            this.dockContainerItem5.Text = "dockContainerItem5";
+            // 
+            // webBrowser1
+            // 
+            this.webBrowser1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.webBrowser1.IsWebBrowserContextMenuEnabled = false;
+            this.webBrowser1.Location = new System.Drawing.Point(0, 0);
+            this.webBrowser1.MinimumSize = new System.Drawing.Size(20, 20);
+            this.webBrowser1.Name = "webBrowser1";
+            this.webBrowser1.ScrollBarsEnabled = false;
+            this.webBrowser1.Size = new System.Drawing.Size(377, 147);
+            this.webBrowser1.TabIndex = 0;
+            this.webBrowser1.Url = new System.Uri("http://chrisward.github.com/Bukkit-Plugin-Writer/title.html", System.UriKind.Absolute);
             // 
             // Form1
             // 
@@ -911,7 +917,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.bar4)).EndInit();
             this.bar4.ResumeLayout(false);
             this.panelDockContainer4.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.scintilla1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -959,7 +964,6 @@
         private DevComponents.DotNetBar.DockSite dockSite9;
         private DevComponents.DotNetBar.Bar bar4;
         private DevComponents.DotNetBar.PanelDockContainer panelDockContainer4;
-        private ScintillaNet.Scintilla scintilla1;
         private DevComponents.DotNetBar.DockContainerItem dockContainerItem4;
         private DevComponents.DotNetBar.Controls.SwitchButton switchButton3;
         private DevComponents.DotNetBar.Controls.SwitchButton switchButton2;
@@ -971,6 +975,9 @@
         private DevComponents.DotNetBar.RibbonBar ribbonBar2;
         private DevComponents.DotNetBar.ButtonItem buttonItem2;
         private DevComponents.DotNetBar.ButtonItem buttonItem3;
+        private DevComponents.DotNetBar.PanelDockContainer panelDockContainer5;
+        private DevComponents.DotNetBar.DockContainerItem dockContainerItem5;
+        private System.Windows.Forms.WebBrowser webBrowser1;
     }
 }
 
