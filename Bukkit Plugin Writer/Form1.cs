@@ -15,10 +15,6 @@ namespace Bukkit_Plugin_Writer
         public Form1()
         {
             InitializeComponent();
-            adderror(ErrorType.Error, "Random", "blah", 1, 2);
-            adderror(ErrorType.Warning, "Random", "blah", 1, 2);
-            adderror(ErrorType.Message, "Random", "blah", 1, 2);
-            adderror(ErrorType.Error, "Random", "blah", 1, 2);
         }
 
         public void adderror(ErrorType type, string Description, string File, int Line, int Column)

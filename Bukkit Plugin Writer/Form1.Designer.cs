@@ -82,9 +82,9 @@
             this.dockSite9 = new DevComponents.DotNetBar.DockSite();
             this.bar4 = new DevComponents.DotNetBar.Bar();
             this.panelDockContainer4 = new DevComponents.DotNetBar.PanelDockContainer();
+            this.webBrowser1 = new System.Windows.Forms.WebBrowser();
             this.dockContainerItem4 = new DevComponents.DotNetBar.DockContainerItem();
             this.dockContainerItem5 = new DevComponents.DotNetBar.DockContainerItem();
-            this.webBrowser1 = new System.Windows.Forms.WebBrowser();
             this.ribbonControl1.SuspendLayout();
             this.ribbonPanel1.SuspendLayout();
             this.dockSite4.SuspendLayout();
@@ -833,17 +833,6 @@
             this.panelDockContainer4.Style.GradientAngle = 90;
             this.panelDockContainer4.TabIndex = 0;
             // 
-            // dockContainerItem4
-            // 
-            this.dockContainerItem4.Control = this.panelDockContainer4;
-            this.dockContainerItem4.Name = "dockContainerItem4";
-            this.dockContainerItem4.Text = "Home Page";
-            // 
-            // dockContainerItem5
-            // 
-            this.dockContainerItem5.Name = "dockContainerItem5";
-            this.dockContainerItem5.Text = "dockContainerItem5";
-            // 
             // webBrowser1
             // 
             this.webBrowser1.Dock = System.Windows.Forms.DockStyle.Fill;
@@ -855,6 +844,17 @@
             this.webBrowser1.Size = new System.Drawing.Size(377, 147);
             this.webBrowser1.TabIndex = 0;
             this.webBrowser1.Url = new System.Uri("http://chrisward.github.com/Bukkit-Plugin-Writer/title.html", System.UriKind.Absolute);
+            // 
+            // dockContainerItem4
+            // 
+            this.dockContainerItem4.Control = this.panelDockContainer4;
+            this.dockContainerItem4.Name = "dockContainerItem4";
+            this.dockContainerItem4.Text = "Home Page";
+            // 
+            // dockContainerItem5
+            // 
+            this.dockContainerItem5.Name = "dockContainerItem5";
+            this.dockContainerItem5.Text = "dockContainerItem5";
             // 
             // Form1
             // 
