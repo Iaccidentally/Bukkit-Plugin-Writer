@@ -82,6 +82,7 @@
             this.dockContainerItem4 = new DevComponents.DotNetBar.DockContainerItem();
             this.dockContainerItem5 = new DevComponents.DotNetBar.DockContainerItem();
             this.treeView1 = new System.Windows.Forms.TreeView();
+            this.openFileDialog1 = new System.Windows.Forms.OpenFileDialog();
             this.ribbonControl1.SuspendLayout();
             this.ribbonPanel1.SuspendLayout();
             this.dockSite4.SuspendLayout();
@@ -227,6 +228,7 @@
             this.buttonItem3.Name = "buttonItem3";
             this.buttonItem3.SubItemsExpandWidth = 14;
             this.buttonItem3.Text = "Open";
+            this.buttonItem3.Click += new System.EventHandler(this.buttonItem3_Click);
             // 
             // ribbonPanel2
             // 
@@ -820,6 +822,12 @@
             this.treeView1.Size = new System.Drawing.Size(161, 152);
             this.treeView1.TabIndex = 0;
             // 
+            // openFileDialog1
+            // 
+            this.openFileDialog1.DefaultExt = "bpw";
+            this.openFileDialog1.Filter = "Bukkit Plugin Sources|*.bpw";
+            this.openFileDialog1.Title = "Open a Plugin";
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -839,6 +847,7 @@
             this.Name = "Form1";
             this.Text = "Bukkit Plugin Writer";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
+            this.Load += new System.EventHandler(this.Form1_Load);
             this.ribbonControl1.ResumeLayout(false);
             this.ribbonControl1.PerformLayout();
             this.ribbonPanel1.ResumeLayout(false);
@@ -920,6 +929,7 @@
         private DevComponents.DotNetBar.DockContainerItem dockContainerItem5;
         private System.Windows.Forms.WebBrowser webBrowser1;
         private System.Windows.Forms.TreeView treeView1;
+        private System.Windows.Forms.OpenFileDialog openFileDialog1;
     }
 }
 

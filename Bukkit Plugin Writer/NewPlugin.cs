@@ -114,7 +114,7 @@ namespace Bukkit_Plugin_Writer
                 //More needs to be able to be added later :-)
                 dotClassPath.WriteLine("</classpath>");
                 dotClassPath.Close();
-                this.sender.openProject(Location + Path.DirectorySeparatorChar + pluginName.Text + ".bps");
+                this.sender.openProject(Location + ".bps");
                 this.Close();
             }
             else

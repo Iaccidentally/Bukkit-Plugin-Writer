@@ -35,7 +35,7 @@ namespace Bukkit_Plugin_Writer
         public void openProject(string bpwFile)
         {
             string[] split = bpwFile.Split('\\');
-            string Folder = bpwFile.Replace(split[split.Count() - 1], "");
+            string Folder = bpwFile.Remove(bpwFile.Length - 4);
             treeView1.Nodes.Clear();
             TreeNode rootNode;
 
@@ -133,6 +133,19 @@ namespace Bukkit_Plugin_Writer
         private void buttonItem2_Click(object sender, EventArgs e)
         {
             (new NewPlugin(this)).ShowDialog(this);
+        }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void buttonItem3_Click(object sender, EventArgs e)
+        {
+            if (openFileDialog1.ShowDialog() == System.Windows.Forms.DialogResult.OK)
+            {
+                openProject(openFileDialog1.FileName);
+            }
         }
     }
 }
