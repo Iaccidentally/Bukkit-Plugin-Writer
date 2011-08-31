@@ -9,6 +9,7 @@ using System.Windows.Forms;
 using DevComponents.DotNetBar;
 using DevComponents.AdvTree;
 using System.IO;
+using ScintillaNet;
 namespace Bukkit_Plugin_Writer
 {
     public partial class Form1 : DevComponents.DotNetBar.Office2007RibbonForm
@@ -114,6 +115,7 @@ namespace Bukkit_Plugin_Writer
                 {
                     System.IO.StreamReader reader = new System.IO.StreamReader(Location);
                     scintilla.Text = reader.ReadToEnd();
+                    scintilla.Tag = Location;
                     reader.Close();
                     tab.Text = Location.Split('\\')[Location.Split('\\').Count() - 1];
                 }
@@ -155,6 +157,26 @@ namespace Bukkit_Plugin_Writer
             else
                 MessageBox.Show(e.Node.Tag.ToString());
               
+        }
+
+        private void save(string text, string location)
+        {
+            StreamWriter stream = new StreamWriter(location);
+            stream.Write(text);
+            stream.Close();
+        }
+
+        private void bar4_DockTabClosing(object sender, DockTabClosingEventArgs e)
+        {
+            foreach (object b in e.DockContainerItem.Control.Controls)
+            {
+                if (b is Scintilla)
+                {
+                    Scintilla saveme = (Scintilla)b;
+                    save(saveme.Text, saveme.Tag.ToString());
+                }
+            }
+            
         }
     }
 }

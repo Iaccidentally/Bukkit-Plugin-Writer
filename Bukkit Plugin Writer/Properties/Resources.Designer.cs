@@ -74,6 +74,13 @@ namespace Bukkit_Plugin_Writer.Properties {
             }
         }
         
+        internal static System.Drawing.Bitmap Document_Help {
+            get {
+                object obj = ResourceManager.GetObject("Document Help", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
         internal static System.Drawing.Bitmap documents_32 {
             get {
                 object obj = ResourceManager.GetObject("documents_32", resourceCulture);
@@ -102,6 +109,13 @@ namespace Bukkit_Plugin_Writer.Properties {
             }
         }
         
+        internal static System.Drawing.Bitmap Pencil {
+            get {
+                object obj = ResourceManager.GetObject("Pencil", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
         internal static System.Drawing.Bitmap redo_32 {
             get {
                 object obj = ResourceManager.GetObject("redo_32", resourceCulture);
@@ -119,6 +133,13 @@ namespace Bukkit_Plugin_Writer.Properties {
         internal static System.Drawing.Bitmap undo_32 {
             get {
                 object obj = ResourceManager.GetObject("undo_32", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        internal static System.Drawing.Bitmap User_Group {
+            get {
+                object obj = ResourceManager.GetObject("User Group", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
