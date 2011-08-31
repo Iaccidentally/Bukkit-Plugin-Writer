@@ -62,7 +62,7 @@ namespace Bukkit_Plugin_Writer
                         return;
                     else
                     {
-                        Directory.Delete(Location);
+                        Directory.Delete(Location, true);
                         File.Delete(Location + ".bpw");
                     }
                 }
@@ -105,16 +105,17 @@ namespace Bukkit_Plugin_Writer
                 pluginDotYML.Close();
                 StreamWriter dotClassPath = new StreamWriter(Location + Path.DirectorySeparatorChar + ".classpath");
                 //I have set this up the same way eclipse does it, but I am beginning to think this is not neccesary.. I know nothing about compiling java.
-                //I will test and see if it works and these dependencies aren't required.
                 dotClassPath.WriteLine("<?xml version=\"1.0\" encoding=\"UTF-8\"?>");
                 dotClassPath.WriteLine("<classpath>");
                 dotClassPath.WriteLine("    <classpathentry type=\"src\" path=\"src\"/>");
                 dotClassPath.WriteLine("    <classpathentry type=\"con\" path=\"org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-1.6\"/>");
                 dotClassPath.WriteLine("    <classpathentry type=\"lib\" path=\"C:\\Program Files\\Bukkit Plugin Writer\\jars\\bukkit.jar\"/>");
                 //Add more includes if needed, for a basic plugin, I think only the JRE and Bukkit are required.
+                //More needs to be able to be added later :-)
                 dotClassPath.WriteLine("</classpath>");
                 dotClassPath.Close();
-                this.sender.createEditorTab(a + Path.DirectorySeparatorChar + pluginName.Text + ".java");
+                this.sender.openProject(Location + Path.DirectorySeparatorChar + pluginName.Text + ".bps");
+                this.Close();
             }
             else
             {

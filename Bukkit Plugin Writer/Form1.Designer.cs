@@ -63,10 +63,6 @@
             this.dockSite1 = new DevComponents.DotNetBar.DockSite();
             this.bar1 = new DevComponents.DotNetBar.Bar();
             this.panelDockContainer1 = new DevComponents.DotNetBar.PanelDockContainer();
-            this.advTree2 = new DevComponents.AdvTree.AdvTree();
-            this.node1 = new DevComponents.AdvTree.Node();
-            this.nodeConnector2 = new DevComponents.AdvTree.NodeConnector();
-            this.elementStyle2 = new DevComponents.DotNetBar.ElementStyle();
             this.dockContainerItem1 = new DevComponents.DotNetBar.DockContainerItem();
             this.dockSite2 = new DevComponents.DotNetBar.DockSite();
             this.bar2 = new DevComponents.DotNetBar.Bar();
@@ -85,6 +81,7 @@
             this.webBrowser1 = new System.Windows.Forms.WebBrowser();
             this.dockContainerItem4 = new DevComponents.DotNetBar.DockContainerItem();
             this.dockContainerItem5 = new DevComponents.DotNetBar.DockContainerItem();
+            this.treeView1 = new System.Windows.Forms.TreeView();
             this.ribbonControl1.SuspendLayout();
             this.ribbonPanel1.SuspendLayout();
             this.dockSite4.SuspendLayout();
@@ -100,7 +97,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.bar1)).BeginInit();
             this.bar1.SuspendLayout();
             this.panelDockContainer1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.advTree2)).BeginInit();
             this.dockSite2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.bar2)).BeginInit();
             this.bar2.SuspendLayout();
@@ -584,7 +580,7 @@
             // panelDockContainer1
             // 
             this.panelDockContainer1.ColorSchemeStyle = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
-            this.panelDockContainer1.Controls.Add(this.advTree2);
+            this.panelDockContainer1.Controls.Add(this.treeView1);
             this.panelDockContainer1.Location = new System.Drawing.Point(3, 23);
             this.panelDockContainer1.Name = "panelDockContainer1";
             this.panelDockContainer1.Size = new System.Drawing.Size(161, 152);
@@ -594,46 +590,6 @@
             this.panelDockContainer1.Style.ForeColor.ColorSchemePart = DevComponents.DotNetBar.eColorSchemePart.ItemText;
             this.panelDockContainer1.Style.GradientAngle = 90;
             this.panelDockContainer1.TabIndex = 0;
-            // 
-            // advTree2
-            // 
-            this.advTree2.AccessibleRole = System.Windows.Forms.AccessibleRole.Outline;
-            this.advTree2.AllowDrop = true;
-            this.advTree2.BackColor = System.Drawing.SystemColors.Window;
-            // 
-            // 
-            // 
-            this.advTree2.BackgroundStyle.Class = "TreeBorderKey";
-            this.advTree2.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
-            this.advTree2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.advTree2.Location = new System.Drawing.Point(0, 0);
-            this.advTree2.Name = "advTree2";
-            this.advTree2.Nodes.AddRange(new DevComponents.AdvTree.Node[] {
-            this.node1});
-            this.advTree2.NodesConnector = this.nodeConnector2;
-            this.advTree2.NodeStyle = this.elementStyle2;
-            this.advTree2.PathSeparator = ";";
-            this.advTree2.Size = new System.Drawing.Size(161, 152);
-            this.advTree2.Styles.Add(this.elementStyle2);
-            this.advTree2.TabIndex = 0;
-            this.advTree2.Text = "advTree2";
-            // 
-            // node1
-            // 
-            this.node1.Expanded = true;
-            this.node1.Name = "node1";
-            this.node1.Text = "node1";
-            // 
-            // nodeConnector2
-            // 
-            this.nodeConnector2.LineColor = System.Drawing.SystemColors.ControlText;
-            // 
-            // elementStyle2
-            // 
-            this.elementStyle2.Class = "";
-            this.elementStyle2.CornerType = DevComponents.DotNetBar.eCornerType.Square;
-            this.elementStyle2.Name = "elementStyle2";
-            this.elementStyle2.TextColor = System.Drawing.SystemColors.ControlText;
             // 
             // dockContainerItem1
             // 
@@ -856,6 +812,14 @@
             this.dockContainerItem5.Name = "dockContainerItem5";
             this.dockContainerItem5.Text = "dockContainerItem5";
             // 
+            // treeView1
+            // 
+            this.treeView1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.treeView1.Location = new System.Drawing.Point(0, 0);
+            this.treeView1.Name = "treeView1";
+            this.treeView1.Size = new System.Drawing.Size(161, 152);
+            this.treeView1.TabIndex = 0;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -891,7 +855,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.bar1)).EndInit();
             this.bar1.ResumeLayout(false);
             this.panelDockContainer1.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.advTree2)).EndInit();
             this.dockSite2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.bar2)).EndInit();
             this.bar2.ResumeLayout(false);
@@ -951,15 +914,12 @@
         private DevComponents.DotNetBar.Controls.SwitchButton switchButton3;
         private DevComponents.DotNetBar.Controls.SwitchButton switchButton2;
         private DevComponents.DotNetBar.Controls.SwitchButton switchButton1;
-        private DevComponents.AdvTree.AdvTree advTree2;
-        private DevComponents.AdvTree.Node node1;
-        private DevComponents.AdvTree.NodeConnector nodeConnector2;
-        private DevComponents.DotNetBar.ElementStyle elementStyle2;
         private DevComponents.DotNetBar.RibbonBar ribbonBar2;
         private DevComponents.DotNetBar.ButtonItem buttonItem2;
         private DevComponents.DotNetBar.ButtonItem buttonItem3;
         private DevComponents.DotNetBar.DockContainerItem dockContainerItem5;
         private System.Windows.Forms.WebBrowser webBrowser1;
+        private System.Windows.Forms.TreeView treeView1;
     }
 }
 

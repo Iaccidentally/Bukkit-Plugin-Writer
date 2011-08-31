@@ -7,6 +7,8 @@ using System.Linq;
 using System.Text;
 using System.Windows.Forms;
 using DevComponents.DotNetBar;
+using DevComponents.AdvTree;
+using System.IO;
 namespace Bukkit_Plugin_Writer
 {
     public partial class Form1 : DevComponents.DotNetBar.Office2007RibbonForm
@@ -19,27 +21,57 @@ namespace Bukkit_Plugin_Writer
 
         public void adderror(ErrorType type, string Description, string File, int Line, int Column)
         {
+            /*
             if (switchButton1.Value && type == ErrorType.Error)
                 advTree1.Nodes.Add(new Error(type, advTree1.Nodes.Count + 1, Description, File, Line, Column));
             if (switchButton2.Value && type == ErrorType.Warning)
                 advTree1.Nodes.Add(new Error(type, advTree1.Nodes.Count + 1, Description, File, Line, Column));
             if (switchButton3.Value && type == ErrorType.Message)
-                advTree1.Nodes.Add(new Error(type, advTree1.Nodes.Count + 1, Description, File, Line, Column));
+                advTree1.Nodes.Add(new Error(type, advTree1.Nodes.Count + 1, Description, File, Line, Column));*/
         }
 
         public enum ErrorType { Error, Warning, Message }
 
-        public class Error : DevComponents.AdvTree.Node
+        public void openProject(string bpwFile)
         {
-            public Error(ErrorType type, int Number, string Description, string File, int Line, int Column)
+            string[] split = bpwFile.Split('\\');
+            string Folder = bpwFile.Replace(split[split.Count() - 1], "");
+            treeView1.Nodes.Clear();
+            TreeNode rootNode;
+
+            DirectoryInfo info = new DirectoryInfo(Folder);
+            if (info.Exists)
             {
-                this.Cells.Clear();
-                this.Cells.Insert(0, new DevComponents.AdvTree.Cell((type.ToString()[0]).ToString()));
-                this.Cells.Insert(1, new DevComponents.AdvTree.Cell(Number.ToString()));
-                this.Cells.Insert(2, new DevComponents.AdvTree.Cell(Description));
-                this.Cells.Insert(3, new DevComponents.AdvTree.Cell(File));
-                this.Cells.Insert(4, new DevComponents.AdvTree.Cell(Line.ToString()));
-                this.Cells.Insert(5, new DevComponents.AdvTree.Cell(Column.ToString()));
+                rootNode = new TreeNode(info.Name);
+                rootNode.Tag = info;
+                GetDirectories(info.GetDirectories(), rootNode);
+                treeView1.Nodes.Add(rootNode);
+            }
+        }
+
+        private void GetDirectories(System.IO.DirectoryInfo[] subDirs, TreeNode nodeToAddTo)
+        {
+            TreeNode aNode;
+            DirectoryInfo[] subSubDirs;
+            foreach (DirectoryInfo subDir in subDirs)
+            {
+                aNode = new TreeNode(subDir.Name, 0, 0);
+                aNode.Tag = subDir;
+                aNode.ImageKey = "folder";
+                subSubDirs = subDir.GetDirectories();
+                if (subSubDirs.Length != 0)
+                {
+                    GetDirectories(subSubDirs, aNode);
+                }
+                nodeToAddTo.Nodes.Add(aNode);
+
+                foreach (FileInfo file in subDir.EnumerateFiles())
+                {
+                    TreeNode bNode = new TreeNode(file.Name, 0, 0);
+                    bNode.Tag = subDir;
+                    bNode.ImageKey = "file";
+                    aNode.Nodes.Add(bNode);
+                }
             }
         }
 
