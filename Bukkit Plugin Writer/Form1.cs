@@ -68,7 +68,7 @@ namespace Bukkit_Plugin_Writer
                 foreach (FileInfo file in subDir.EnumerateFiles())
                 {
                     TreeNode bNode = new TreeNode(file.Name, 0, 0);
-                    bNode.Tag = subDir;
+                    bNode.Tag = file.FullName;
                     bNode.ImageKey = "file";
                     aNode.Nodes.Add(bNode);
                 }
@@ -146,6 +146,15 @@ namespace Bukkit_Plugin_Writer
             {
                 openProject(openFileDialog1.FileName);
             }
+        }
+
+        private void treeView1_NodeMouseDoubleClick(object sender, TreeNodeMouseClickEventArgs e)
+        {
+            if (File.Exists(e.Node.Tag.ToString()))
+                createEditorTab(e.Node.Tag.ToString());
+            else
+                MessageBox.Show(e.Node.Tag.ToString());
+              
         }
     }
 }
