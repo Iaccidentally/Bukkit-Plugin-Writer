@@ -1745,9 +1745,6 @@ Yes
 02B46541-3D0D-4D1C-B265-D125BFE432B3,Text
 {<%LaunchApplicationText%>}
 
-2239278A-A782-4AF7-B700-8C23276A74C2,Description
-{<%CustomInstallDescription%>}
-
 28B10EC7-75A2-4F76-9857-A0C847C4222A,Message
 {<%UninstallingApplicationText%>}
 

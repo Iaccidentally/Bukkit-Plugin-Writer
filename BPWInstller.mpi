@@ -245,7 +245,6 @@ File ::BD1545D7-9784-41D3-83D8-D5C6A5A1B246 -name SciLexer.dll -parent 6A490573-
 File ::6F09E334-236C-40C5-B941-E646518235D6 -name ScintillaNet.dll -parent 6A490573-A559-4FED-9C77-27D8402F53C8
 Component ::B6D32DAE-A8D4-4ED3-A22C-1E55FD22EF2D -setup Install -active Yes -platforms {AIX-ppc FreeBSD-4-x86 FreeBSD-5-x86 FreeBSD-6-x86 FreeBSD-7-x86 HPUX-hppa Linux-x86 Linux-x86_64 Solaris-sparc Solaris-x86 Windows} -name {Default Component} -parent Components
 SetupType ::7639CBA9-FD0E-41F0-B652-35B60752C52B -setup Install -active Yes -platforms {AIX-ppc FreeBSD-4-x86 FreeBSD-5-x86 FreeBSD-6-x86 FreeBSD-7-x86 HPUX-hppa Linux-x86 Linux-x86_64 Solaris-sparc Solaris-x86 Windows} -name Typical -parent SetupTypes
-SetupType ::2239278A-A782-4AF7-B700-8C23276A74C2 -setup Install -active Yes -platforms {AIX-ppc FreeBSD-4-x86 FreeBSD-5-x86 FreeBSD-6-x86 FreeBSD-7-x86 HPUX-hppa Linux-x86 Linux-x86_64 Solaris-sparc Solaris-x86 Windows} -name Custom -parent SetupTypes
 
 InstallComponent 83C6A2EC-242E-4010-8A77-3D275822F6F0 -setup Install -type pane -title {Welcome Screen} -component Welcome -active Yes -parent StandardInstall
 InstallComponent F8B6FFF8-8074-48C0-9777-42DB6E063886 -setup Install -type pane -conditions {4DBCEDE0-1926-4394-ADE4-895719D2A66B E9DADA3A-A32E-4938-998A-88A94D59C026} -title {Select Destination} -component SelectDestination -active Yes -parent StandardInstall
@@ -421,18 +420,6 @@ array set Properties {
 
 18A6CB67-06BD-4B74-AEF9-6B4064D69BEB,Prompt
 {<%InstallStartupText%>}
-
-2239278A-A782-4AF7-B700-8C23276A74C2,Components
-{B6D32DAE-A8D4-4ED3-A22C-1E55FD22EF2D}
-
-2239278A-A782-4AF7-B700-8C23276A74C2,Description,subst
-{1}
-
-2239278A-A782-4AF7-B700-8C23276A74C2,DisplayName,subst
-{1}
-
-2239278A-A782-4AF7-B700-8C23276A74C2,Name
-{Custom}
 
 232A40F7-42BA-4467-BFEC-D6C54EC7C74C,CheckCondition
 {Before Action is Executed}
@@ -1857,7 +1844,7 @@ Windows,LastRequireAdministrator
 {Yes}
 
 Windows,ProgramExecutable
-{<%InstallDir%>/BPW.exe}
+{<%InstallDir%>/Bukkit Plugin Writer.exe}
 
 Windows,ProgramFolderAllUsers
 {No}
@@ -1993,9 +1980,6 @@ EAE1D8AF-8111-4FC8-ABB1-803245141A01,Message
 ::msgcat::mcmset en {
 02B46541-3D0D-4D1C-B265-D125BFE432B3,Text
 {<%LaunchApplicationText%>}
-
-2239278A-A782-4AF7-B700-8C23276A74C2,Description
-{<%CustomInstallDescription%>}
 
 28B10EC7-75A2-4F76-9857-A0C847C4222A,Message
 {<%UninstallingApplicationText%>}

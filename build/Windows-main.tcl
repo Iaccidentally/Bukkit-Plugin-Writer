@@ -74,7 +74,7 @@ namespace eval ::InstallAPI {}
 namespace eval ::InstallJammer {}
 set conf(version)     1.2.15
 set info(Platform)    Windows
-set info(InstallerID) C0BE7098-C2DF-4A8D-A40A-4364F41C74E4
+set info(InstallerID) 9A08B451-11AC-43B7-B5B7-850BEDB776A8
 array set ::InstallJammer::languagecodes {ca CatalÃ cs Czech de German en English es Spanish fr French hu Magyar it Italian lt Lithuanian nl Nederlands pl Polish pt_br {Brazilian Portuguese} ru Russian}
 array set info {
 AllowLanguageSelection
@@ -180,7 +180,7 @@ PatchVersion
 {0}
 
 ProgramExecutable
-{<%InstallDir%>/BPW.exe}
+{<%InstallDir%>/Bukkit Plugin Writer.exe}
 
 ProgramFolderAllUsers
 {No}
@@ -512,27 +512,6 @@ array set ::InstallJammer::Properties {
 
 18A6CB67-06BD-4B74-AEF9-6B4064D69BEB,VirtualText
 {Answer}
-
-2239278A-A782-4AF7-B700-8C23276A74C2,Active
-{Yes}
-
-2239278A-A782-4AF7-B700-8C23276A74C2,Components
-{B6D32DAE-A8D4-4ED3-A22C-1E55FD22EF2D}
-
-2239278A-A782-4AF7-B700-8C23276A74C2,Description,subst
-{1}
-
-2239278A-A782-4AF7-B700-8C23276A74C2,DisplayName,subst
-{1}
-
-2239278A-A782-4AF7-B700-8C23276A74C2,ID
-{}
-
-2239278A-A782-4AF7-B700-8C23276A74C2,Name
-{Custom}
-
-2239278A-A782-4AF7-B700-8C23276A74C2,ShowSetupType
-{Yes}
 
 23D1EC94-9B3A-404D-827D-5F0BE2F60359,Active
 {Yes}
@@ -3424,7 +3403,7 @@ Windows,LastRequireAdministrator
 {Yes}
 
 Windows,ProgramExecutable
-{<%InstallDir%>/BPW.exe}
+{<%InstallDir%>/Bukkit Plugin Writer.exe}
 
 Windows,ProgramFolderAllUsers
 {No}
@@ -15354,7 +15333,6 @@ SetupType ::SetupTypes
 FileGroup ::5985A82E-00CF-4573-82F2-8F7AB1F3001B -setup Install -active Yes -platforms {AIX-ppc FreeBSD-4-x86 FreeBSD-5-x86 FreeBSD-6-x86 FreeBSD-7-x86 HPUX-hppa Linux-x86 Linux-x86_64 Solaris-sparc Solaris-x86 Windows TarArchive ZipArchive} -name {Program Files} -parent FileGroups
 Component ::B6D32DAE-A8D4-4ED3-A22C-1E55FD22EF2D -setup Install -active Yes -platforms {AIX-ppc FreeBSD-4-x86 FreeBSD-5-x86 FreeBSD-6-x86 FreeBSD-7-x86 HPUX-hppa Linux-x86 Linux-x86_64 Solaris-sparc Solaris-x86 Windows} -name {Default Component} -parent Components
 SetupType ::7639CBA9-FD0E-41F0-B652-35B60752C52B -setup Install -active Yes -platforms {AIX-ppc FreeBSD-4-x86 FreeBSD-5-x86 FreeBSD-6-x86 FreeBSD-7-x86 HPUX-hppa Linux-x86 Linux-x86_64 Solaris-sparc Solaris-x86 Windows} -name Typical -parent SetupTypes
-SetupType ::2239278A-A782-4AF7-B700-8C23276A74C2 -setup Install -active Yes -platforms {AIX-ppc FreeBSD-4-x86 FreeBSD-5-x86 FreeBSD-6-x86 FreeBSD-7-x86 HPUX-hppa Linux-x86 Linux-x86_64 Solaris-sparc Solaris-x86 Windows} -name Custom -parent SetupTypes
 
 }
 } common.tcl {
@@ -22934,7 +22912,7 @@ Windows,LastRequireAdministrator
 {Yes}
 
 Windows,ProgramExecutable
-{<%InstallDir%>/BPW.exe}
+{<%InstallDir%>/Bukkit Plugin Writer.exe}
 
 Windows,ProgramFolderAllUsers
 {No}
