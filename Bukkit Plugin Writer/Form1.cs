@@ -118,6 +118,15 @@ namespace Bukkit_Plugin_Writer
                     scintilla.Tag = Location;
                     reader.Close();
                     tab.Text = Location.Split('\\')[Location.Split('\\').Count() - 1];
+                    int i = 0;
+                    foreach(DockContainerItem tabb in bar4.Items)
+                    {
+                        if(tabb == tab)
+                            break;
+                        else
+                            i++;
+                    }
+                    bar4.SelectedDockTab = i;
                 }
             }
         }
