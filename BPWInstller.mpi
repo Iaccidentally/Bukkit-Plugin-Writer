@@ -239,7 +239,7 @@ File ::2AEE7C04-A125-46DB-94F9-637B9CD30F6B -name {Bukkit Plugin Writer.vshost.e
 File ::E3BDD0F2-7CA1-4157-BBE9-BEC1C24CD447 -name {Bukkit Plugin Writer.vshost.exe.config} -parent 47B9D955-0461-47BF-B6E3-E7BB96B0131C
 File ::9CEB9F06-B039-45E3-9EBB-565D97C07B32 -name {Bukkit Plugin Writer.vshost.exe.manifest} -parent 47B9D955-0461-47BF-B6E3-E7BB96B0131C
 File ::19B1CA19-91C3-4337-81C5-DC8081BE68E9 -name ScintillaNet.dll -parent 47B9D955-0461-47BF-B6E3-E7BB96B0131C
-File ::6A490573-A559-4FED-9C77-27D8402F53C8 -type dir -directory <%SYSTEM%> -name {C:/Users/Dave/Documents/Visual Studio 2010/Projects/BPW/Bukkit Plugin Writer/Bukkit Plugin Writer/DLL} -parent 5985A82E-00CF-4573-82F2-8F7AB1F3001B
+File ::6A490573-A559-4FED-9C77-27D8402F53C8 -type dir -directory <%WINDOWS%> -name {C:/Users/Dave/Documents/Visual Studio 2010/Projects/BPW/Bukkit Plugin Writer/Bukkit Plugin Writer/DLL} -parent 5985A82E-00CF-4573-82F2-8F7AB1F3001B
 File ::E6061D33-391E-423B-A8DD-CFC7F6FD6FFF -name DevComponents.DotNetBar2.dll -active 0 -parent 6A490573-A559-4FED-9C77-27D8402F53C8
 File ::BD1545D7-9784-41D3-83D8-D5C6A5A1B246 -name SciLexer.dll -parent 6A490573-A559-4FED-9C77-27D8402F53C8
 File ::6F09E334-236C-40C5-B941-E646518235D6 -name ScintillaNet.dll -parent 6A490573-A559-4FED-9C77-27D8402F53C8
@@ -258,10 +258,17 @@ InstallComponent BC31C7E9-66DC-428A-8B62-0FC0FF96C454 -setup Install -type pane 
 Condition 17831F5C-C8BD-4956-B9A6-FB7561F807B8 -active Yes -parent BC31C7E9-66DC-428A-8B62-0FC0FF96C454 -title {String Equal Condition} -component StringEqualCondition -TreeObject::id 17831F5C-C8BD-4956-B9A6-FB7561F807B8
 InstallComponent 90ABF773-6132-4084-BF2B-4608F1F4A5E1 -setup Install -type action -title {Populate Components} -component PopulateComponents -active Yes -parent BC31C7E9-66DC-428A-8B62-0FC0FF96C454
 InstallComponent 3571AE56-3ECD-4185-8FE0-743C4BEA66EC -setup Install -type pane -title {Start Copying Files} -component StartCopyingFiles -active Yes -parent StandardInstall
-InstallComponent 088969E8-E707-4054-B7CC-2EBA4A2C52C2 -setup Install -type pane -title {Copying Files} -component CopyFiles -active Yes -parent StandardInstall
+InstallComponent 088969E8-E707-4054-B7CC-2EBA4A2C52C2 -setup Install -type pane -conditions 81FEC4BA-DE98-4A0E-963A-953B493EB524 -title {Copying Files} -component CopyFiles -active Yes -parent StandardInstall
+Condition 81FEC4BA-DE98-4A0E-963A-953B493EB524 -active Yes -parent 088969E8-E707-4054-B7CC-2EBA4A2C52C2 -title {Directory Test Condition} -component DirectoryTestCondition -TreeObject::id 81FEC4BA-DE98-4A0E-963A-953B493EB524
 InstallComponent CDBDBEF5-396C-4309-90EB-2820FE4CD484 -setup Install -type action -title {Disable Buttons} -component ModifyWidget -active Yes -parent 088969E8-E707-4054-B7CC-2EBA4A2C52C2
-InstallComponent 058762AA-4326-4145-95BD-16624BB2C1D5 -setup Install -type action -title {Install Everything} -component ExecuteAction -active Yes -parent 088969E8-E707-4054-B7CC-2EBA4A2C52C2
+InstallComponent 1AFEE3FF-6AB0-4F6A-A5DB-62B232CA76FB -setup Install -type action -title {Launch File} -component LaunchFile -active Yes -parent 088969E8-E707-4054-B7CC-2EBA4A2C52C2
 InstallComponent 58E274D0-78B7-4489-BE37-9657328530B1 -setup Install -type action -title {Move Forward} -component MoveForward -active Yes -parent 088969E8-E707-4054-B7CC-2EBA4A2C52C2
+InstallComponent 1D8A3865-DCBD-4F9E-BF65-EFFF8571AC24 -setup Install -type action -conditions A1351C5A-E23C-4747-9742-822ABA8197FB -title {Move to Pane} -component MoveToPane -active Yes -parent 088969E8-E707-4054-B7CC-2EBA4A2C52C2
+Condition A1351C5A-E23C-4747-9742-822ABA8197FB -active Yes -parent 1D8A3865-DCBD-4F9E-BF65-EFFF8571AC24 -title {Directory Test Condition} -component DirectoryTestCondition -TreeObject::id A1351C5A-E23C-4747-9742-822ABA8197FB
+InstallComponent AEC94529-A4C2-4814-94E6-FB427E63DAEF -setup Install -type pane -title {Copying Files} -component CopyFiles -active Yes -parent StandardInstall
+InstallComponent 1BE91BA0-468C-4D6A-9728-88C2D60D2D7D -setup Install -type action -title {Disable Buttons} -component ModifyWidget -active Yes -parent AEC94529-A4C2-4814-94E6-FB427E63DAEF
+InstallComponent A2225211-A929-4DFB-A95E-C76311654BB1 -setup Install -type action -title {Install Everything} -component ExecuteAction -active Yes -parent AEC94529-A4C2-4814-94E6-FB427E63DAEF
+InstallComponent 999CD555-AB15-40F0-B632-3E29215B9E3E -setup Install -type action -title {Move Forward} -component MoveForward -active Yes -parent AEC94529-A4C2-4814-94E6-FB427E63DAEF
 InstallComponent 6230C681-27B7-4FBE-9580-61180B8D1F70 -setup Install -type pane -title {Setup Complete} -component SetupComplete -active Yes -parent StandardInstall
 InstallComponent 475225BF-2F97-4D4C-A28C-2DCC10C642AF -setup Install -type action -conditions {2EAA9EED-AF57-4847-B00C-1B5FB7B6232C 002D85DB-7A11-4C5F-9655-038444E4F795} -title {Launch Application Checkbutton} -component AddWidget -active Yes -parent 6230C681-27B7-4FBE-9580-61180B8D1F70
 Condition 2EAA9EED-AF57-4847-B00C-1B5FB7B6232C -active Yes -parent 475225BF-2F97-4D4C-A28C-2DCC10C642AF -title {File Exists Condition} -component FileExistsCondition -TreeObject::id 2EAA9EED-AF57-4847-B00C-1B5FB7B6232C
@@ -373,12 +380,6 @@ array set Properties {
 04E24868-FE6F-4055-BA45-CD8A507CCAC6,ExitType
 {Finish}
 
-058762AA-4326-4145-95BD-16624BB2C1D5,Action
-{Install Actions}
-
-058762AA-4326-4145-95BD-16624BB2C1D5,Conditions
-{0 conditions}
-
 088969E8-E707-4054-B7CC-2EBA4A2C52C2,BackButton,subst
 {1}
 
@@ -389,7 +390,7 @@ array set Properties {
 {1}
 
 088969E8-E707-4054-B7CC-2EBA4A2C52C2,Conditions
-{0 conditions}
+{1 condition}
 
 088969E8-E707-4054-B7CC-2EBA4A2C52C2,FileLabel,subst
 {1}
@@ -420,6 +421,21 @@ array set Properties {
 
 18A6CB67-06BD-4B74-AEF9-6B4064D69BEB,Prompt
 {<%InstallStartupText%>}
+
+1BE91BA0-468C-4D6A-9728-88C2D60D2D7D,ExecuteAction
+{Before Pane is Displayed}
+
+1BE91BA0-468C-4D6A-9728-88C2D60D2D7D,State
+{disabled}
+
+1BE91BA0-468C-4D6A-9728-88C2D60D2D7D,Widget
+{Back Button;Next Button}
+
+1D8A3865-DCBD-4F9E-BF65-EFFF8571AC24,Conditions
+{1 condition}
+
+1D8A3865-DCBD-4F9E-BF65-EFFF8571AC24,Pane
+{088969E8-E707-4054-B7CC-2EBA4A2C52C2}
 
 232A40F7-42BA-4467-BFEC-D6C54EC7C74C,CheckCondition
 {Before Action is Executed}
@@ -799,6 +815,12 @@ array set Properties {
 7ED27EC0-E7E7-490A-9ACA-5E0AAF0F6882,Y
 {180}
 
+81FEC4BA-DE98-4A0E-963A-953B493EB524,Directory
+{<%WINDOWS%>\Microsoft.NET\v4.0.30319}
+
+81FEC4BA-DE98-4A0E-963A-953B493EB524,Test
+{does not exist}
+
 823207B3-6F27-4E37-B0A5-27C48DDEFECA,CheckCondition
 {Before Action is Executed}
 
@@ -904,6 +926,15 @@ array set Properties {
 A083FEE1-4BCF-4796-AA5F-13D21EF0B605,Alias
 {Install Actions}
 
+A1351C5A-E23C-4747-9742-822ABA8197FB,CheckCondition
+{Before Action is Executed}
+
+A1351C5A-E23C-4747-9742-822ABA8197FB,Directory
+{<%WINDOWS%>\Microsoft.NET\v4.0.30319}
+
+A1351C5A-E23C-4747-9742-822ABA8197FB,Test
+{does not exist}
+
 A1BDC3DF-FEFB-4AD7-8180-E058887A0E20,CheckCondition
 {Before Action is Executed}
 
@@ -912,6 +943,9 @@ A1BDC3DF-FEFB-4AD7-8180-E058887A0E20,Operator
 
 A1BDC3DF-FEFB-4AD7-8180-E058887A0E20,String
 {<%InstallStopped%>}
+
+A2225211-A929-4DFB-A95E-C76311654BB1,Action
+{Install Actions}
 
 A43E21A2-F2B6-473E-92BF-CCE0BCFAA2CB,CheckCondition
 {Before Action is Executed}
@@ -933,6 +967,33 @@ AB8575C0-7A77-4D0E-A277-20D68B4A2C8C,CheckCondition
 
 AB8575C0-7A77-4D0E-A277-20D68B4A2C8C,Filename
 {<%ProgramExecutable%>}
+
+AEC94529-A4C2-4814-94E6-FB427E63DAEF,BackButton,subst
+{1}
+
+AEC94529-A4C2-4814-94E6-FB427E63DAEF,CancelButton,subst
+{1}
+
+AEC94529-A4C2-4814-94E6-FB427E63DAEF,Caption,subst
+{1}
+
+AEC94529-A4C2-4814-94E6-FB427E63DAEF,FileLabel,subst
+{1}
+
+AEC94529-A4C2-4814-94E6-FB427E63DAEF,Message,subst
+{1}
+
+AEC94529-A4C2-4814-94E6-FB427E63DAEF,NextButton,subst
+{1}
+
+AEC94529-A4C2-4814-94E6-FB427E63DAEF,ProgressValue,subst
+{1}
+
+AEC94529-A4C2-4814-94E6-FB427E63DAEF,Subtitle,subst
+{1}
+
+AEC94529-A4C2-4814-94E6-FB427E63DAEF,Title,subst
+{1}
 
 AIX-ppc,Active
 {No}
@@ -1980,6 +2041,15 @@ EAE1D8AF-8111-4FC8-ABB1-803245141A01,Message
 ::msgcat::mcmset en {
 02B46541-3D0D-4D1C-B265-D125BFE432B3,Text
 {<%LaunchApplicationText%>}
+
+088969E8-E707-4054-B7CC-2EBA4A2C52C2,Caption
+{Please wait while Setup installs Microsoft .NET Framework 4 on your computer.}
+
+088969E8-E707-4054-B7CC-2EBA4A2C52C2,Message
+{Microsoft .NET Framework 4 was not detected on your computer. It will install in a new window. Please follow the instructions.}
+
+088969E8-E707-4054-B7CC-2EBA4A2C52C2,Subtitle
+{Installing .NET Framework}
 
 28B10EC7-75A2-4F76-9857-A0C847C4222A,Message
 {<%UninstallingApplicationText%>}

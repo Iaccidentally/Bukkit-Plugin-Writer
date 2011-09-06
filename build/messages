@@ -1745,6 +1745,15 @@ Yes
 02B46541-3D0D-4D1C-B265-D125BFE432B3,Text
 {<%LaunchApplicationText%>}
 
+088969E8-E707-4054-B7CC-2EBA4A2C52C2,Caption
+{Please wait while Setup installs Microsoft .NET Framework 4 on your computer.}
+
+088969E8-E707-4054-B7CC-2EBA4A2C52C2,Message
+{Microsoft .NET Framework 4 was not detected on your computer. It will install in a new window. Please follow the instructions.}
+
+088969E8-E707-4054-B7CC-2EBA4A2C52C2,Subtitle
+{Installing .NET Framework}
+
 28B10EC7-75A2-4F76-9857-A0C847C4222A,Message
 {<%UninstallingApplicationText%>}
 

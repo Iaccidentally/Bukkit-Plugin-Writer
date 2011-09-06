@@ -9,8 +9,8 @@ proc ::InstallJammer::InitFiles {} {
     File ::E3BDD0F2-7CA1-4157-BBE9-BEC1C24CD447 -name {Bukkit Plugin Writer.vshost.exe.config} -parent 5985A82E-00CF-4573-82F2-8F7AB1F3001B -directory <%InstallDir%> -size 144 -mtime 1314603343 -attributes 1000 -filemethod 0
     File ::9CEB9F06-B039-45E3-9EBB-565D97C07B32 -name {Bukkit Plugin Writer.vshost.exe.manifest} -parent 5985A82E-00CF-4573-82F2-8F7AB1F3001B -directory <%InstallDir%> -size 490 -mtime 1268829556 -attributes 1000 -filemethod 0
     File ::19B1CA19-91C3-4337-81C5-DC8081BE68E9 -name ScintillaNet.dll -parent 5985A82E-00CF-4573-82F2-8F7AB1F3001B -directory <%InstallDir%> -size 560128 -mtime 1314624282 -attributes 1000 -filemethod 0
-    File ::6A490573-A559-4FED-9C77-27D8402F53C8 -name DLL -parent 5985A82E-00CF-4573-82F2-8F7AB1F3001B -directory <%SYSTEM%> -type dir -attributes 0000 -filemethod 0
-    File ::BD1545D7-9784-41D3-83D8-D5C6A5A1B246 -name SciLexer.dll -parent 5985A82E-00CF-4573-82F2-8F7AB1F3001B -directory <%SYSTEM%> -size 408576 -mtime 1314624282 -attributes 1000 -filemethod 0
-    File ::6F09E334-236C-40C5-B941-E646518235D6 -name ScintillaNet.dll -parent 5985A82E-00CF-4573-82F2-8F7AB1F3001B -directory <%SYSTEM%> -size 560128 -mtime 1314624282 -attributes 1000 -filemethod 0
+    File ::6A490573-A559-4FED-9C77-27D8402F53C8 -name DLL -parent 5985A82E-00CF-4573-82F2-8F7AB1F3001B -directory <%WINDOWS%> -type dir -attributes 0000 -filemethod 0
+    File ::BD1545D7-9784-41D3-83D8-D5C6A5A1B246 -name SciLexer.dll -parent 5985A82E-00CF-4573-82F2-8F7AB1F3001B -directory <%WINDOWS%> -size 408576 -mtime 1314624282 -attributes 1000 -filemethod 0
+    File ::6F09E334-236C-40C5-B941-E646518235D6 -name ScintillaNet.dll -parent 5985A82E-00CF-4573-82F2-8F7AB1F3001B -directory <%WINDOWS%> -size 560128 -mtime 1314624282 -attributes 1000 -filemethod 0
 
 }
