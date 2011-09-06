@@ -1,0 +1,11 @@
+# options: -translation lf -encoding utf-8
+
+{C:/Users/Dave/Documents/Visual Studio 2010/Projects/BPW/Bukkit Plugin Writer/Bukkit Plugin Writer/bin/Debug/Bukkit Plugin Writer.exe} BE0B8515-600A-4917-B884-B90314389121 zlib
+{C:/Users/Dave/Documents/Visual Studio 2010/Projects/BPW/Bukkit Plugin Writer/Bukkit Plugin Writer/bin/Debug/Bukkit Plugin Writer.exe.config} 0383D1B5-E888-493D-B103-EBE670312A9F zlib
+{C:/Users/Dave/Documents/Visual Studio 2010/Projects/BPW/Bukkit Plugin Writer/Bukkit Plugin Writer/bin/Debug/Bukkit Plugin Writer.pdb} D0731842-7DB0-4548-A9AF-6CD58AB0E709 zlib
+{C:/Users/Dave/Documents/Visual Studio 2010/Projects/BPW/Bukkit Plugin Writer/Bukkit Plugin Writer/bin/Debug/Bukkit Plugin Writer.vshost.exe} 2AEE7C04-A125-46DB-94F9-637B9CD30F6B zlib
+{C:/Users/Dave/Documents/Visual Studio 2010/Projects/BPW/Bukkit Plugin Writer/Bukkit Plugin Writer/bin/Debug/Bukkit Plugin Writer.vshost.exe.config} E3BDD0F2-7CA1-4157-BBE9-BEC1C24CD447 zlib
+{C:/Users/Dave/Documents/Visual Studio 2010/Projects/BPW/Bukkit Plugin Writer/Bukkit Plugin Writer/bin/Debug/Bukkit Plugin Writer.vshost.exe.manifest} 9CEB9F06-B039-45E3-9EBB-565D97C07B32 zlib
+{C:/Users/Dave/Documents/Visual Studio 2010/Projects/BPW/Bukkit Plugin Writer/Bukkit Plugin Writer/bin/Debug/ScintillaNet.dll} 19B1CA19-91C3-4337-81C5-DC8081BE68E9 zlib
+{C:/Users/Dave/Documents/Visual Studio 2010/Projects/BPW/Bukkit Plugin Writer/Bukkit Plugin Writer/DLL/SciLexer.dll} BD1545D7-9784-41D3-83D8-D5C6A5A1B246 zlib
+{C:/Users/Dave/Documents/Visual Studio 2010/Projects/BPW/Bukkit Plugin Writer/Bukkit Plugin Writer/DLL/ScintillaNet.dll} 6F09E334-236C-40C5-B941-E646518235D6 zlib
