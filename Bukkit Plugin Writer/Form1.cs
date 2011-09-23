@@ -80,8 +80,15 @@ namespace Bukkit_Plugin_Writer
         {
             ScintillaNet.Scintilla scintilla = new ScintillaNet.Scintilla();
             scintilla.Caret.BlinkRate = 500;
-            scintilla.ConfigurationManager.CustomLocation = "C:\\Program Files\\Bukkit Plugin Writer\\code highlighting.xml";
-            scintilla.ConfigurationManager.Language = "java";
+            if (Location.ToLower().EndsWith(".java"))
+            {
+                scintilla.ConfigurationManager.CustomLocation = "C:\\Program Files\\Bukkit Plugin Writer\\code highlighting.xml";
+                scintilla.ConfigurationManager.Language = "java";
+            }
+            else if(Location.ToLower().EndsWith(".yml") || Location.ToLower().EndsWith(".yaml"))
+            {
+                scintilla.ConfigurationManager.Language = "yaml";
+            }
             scintilla.Dock = System.Windows.Forms.DockStyle.Fill;
             scintilla.Folding.IsEnabled = false;
             scintilla.Indentation.TabWidth = 4;
