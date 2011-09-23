@@ -29,34 +29,4 @@
       </Keywords>
     </Lexer>
   </Language>
-  
-    <!--C# language based on http://scintillanet.codeplex.com/Thread/View.aspx?ThreadId=83269-->
-    <Language Name="C#">
-    <Lexer LexerName="cs" LineCommentPrefix="//" StreamCommentPrefix="/** " StreamCommentSuffix=" */" >
-      <Keywords List="0" Inherit="False">
-        abstract as base break by case catch checked const continue decimal default delegate
-        do descending explicit event extern else false finally fixed for foreach from goto group 
-        if implicit in interface internal into is lock new null namespace object operator out override orderby
-        params private protected public readonly ref return switch struct sbyte sealed sizeof stackalloc
-        string select this throw true try typeof uint ulong unchecked unsafe ushort var virtual volatile void
-        while where yield        
-      </Keywords>
-      <Keywords List="1" Inherit="False">
-        bool byte char class double enum float int long short static using
-      </Keywords>
-    </Lexer>
-    </Language>
-  
-    <!--Perl language based on http://scintillanet.codeplex.com/Thread/View.aspx?ThreadId=83269-->
-  <Language Name="Perl">
-    <Lexer LexerName="pl" LineCommentPrefix="#" >
-      <Keywords List="0" Inherit="False">
-        $ @ / \ ^ =~ die do else for foreach if last next print return sub while unless until 
-      </Keywords>
-      <Keywords List="1" Inherit="False">
-        float g long s str
-      </Keywords>
-    </Lexer>    
-  </Language>
-  
 </ScintillaNET>
