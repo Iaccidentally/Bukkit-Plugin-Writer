@@ -205,5 +205,25 @@ namespace Bukkit_Plugin_Writer
             System.Diagnostics.Process.Start("http://wiki.chrisgward.com/index.php/Program:Bukkit_Plugin_Writer/Manual");
         }
 
+        private void buttonItem10_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void buttonItem12_Click(object sender, EventArgs e)
+        {
+            System.Diagnostics.Process.Start("http://www.bukkit.org");
+        }
+
+        private void buttonItem13_Click(object sender, EventArgs e)
+        {
+            //System.Diagnostics.Process.Start("");
+        }
+
+        private void buttonItem15_Click(object sender, EventArgs e)
+        {
+            System.Diagnostics.Process.Start("http://dev.bukkit.org");
+        }
+
     }
 }

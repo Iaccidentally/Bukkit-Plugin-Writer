@@ -105,6 +105,7 @@
             this.dockContainerItem5 = new DevComponents.DotNetBar.DockContainerItem();
             this.openFileDialog1 = new System.Windows.Forms.OpenFileDialog();
             this.buttonItem14 = new DevComponents.DotNetBar.ButtonItem();
+            this.buttonItem15 = new DevComponents.DotNetBar.ButtonItem();
             this.ribbonControl1.SuspendLayout();
             this.ribbonPanel1.SuspendLayout();
             this.ribbonPanel6.SuspendLayout();
@@ -387,10 +388,11 @@
             this.ribbonBar5.Items.AddRange(new DevComponents.DotNetBar.BaseItem[] {
             this.buttonItem10,
             this.buttonItem12,
-            this.buttonItem13});
+            this.buttonItem13,
+            this.buttonItem15});
             this.ribbonBar5.Location = new System.Drawing.Point(176, 0);
             this.ribbonBar5.Name = "ribbonBar5";
-            this.ribbonBar5.Size = new System.Drawing.Size(213, 102);
+            this.ribbonBar5.Size = new System.Drawing.Size(302, 102);
             this.ribbonBar5.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
             this.ribbonBar5.TabIndex = 1;
             this.ribbonBar5.Text = "Community";
@@ -413,18 +415,21 @@
             this.buttonItem10.Name = "buttonItem10";
             this.buttonItem10.SubItemsExpandWidth = 14;
             this.buttonItem10.Text = "IRC";
+            this.buttonItem10.Click += new System.EventHandler(this.buttonItem10_Click);
             // 
             // buttonItem12
             // 
             this.buttonItem12.Name = "buttonItem12";
             this.buttonItem12.SubItemsExpandWidth = 14;
             this.buttonItem12.Text = "Bukkit Forums";
+            this.buttonItem12.Click += new System.EventHandler(this.buttonItem12_Click);
             // 
             // buttonItem13
             // 
             this.buttonItem13.Name = "buttonItem13";
             this.buttonItem13.SubItemsExpandWidth = 14;
             this.buttonItem13.Text = "Bukkit Javadocs";
+            this.buttonItem13.Click += new System.EventHandler(this.buttonItem13_Click);
             // 
             // ribbonBar4
             // 
@@ -1193,6 +1198,13 @@
             this.buttonItem14.Text = "Documentation";
             this.buttonItem14.Click += new System.EventHandler(this.buttonItem14_Click);
             // 
+            // buttonItem15
+            // 
+            this.buttonItem15.Name = "buttonItem15";
+            this.buttonItem15.SubItemsExpandWidth = 14;
+            this.buttonItem15.Text = "BukkitDev";
+            this.buttonItem15.Click += new System.EventHandler(this.buttonItem15_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -1318,6 +1330,7 @@
         private DevComponents.DotNetBar.ButtonItem buttonItem12;
         private DevComponents.DotNetBar.ButtonItem buttonItem13;
         private DevComponents.DotNetBar.ButtonItem buttonItem14;
+        private DevComponents.DotNetBar.ButtonItem buttonItem15;
     }
 }
 
