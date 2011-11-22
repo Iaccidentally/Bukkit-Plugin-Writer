@@ -104,6 +104,7 @@
             this.dockContainerItem4 = new DevComponents.DotNetBar.DockContainerItem();
             this.dockContainerItem5 = new DevComponents.DotNetBar.DockContainerItem();
             this.openFileDialog1 = new System.Windows.Forms.OpenFileDialog();
+            this.buttonItem14 = new DevComponents.DotNetBar.ButtonItem();
             this.ribbonControl1.SuspendLayout();
             this.ribbonPanel1.SuspendLayout();
             this.ribbonPanel6.SuspendLayout();
@@ -387,7 +388,7 @@
             this.buttonItem10,
             this.buttonItem12,
             this.buttonItem13});
-            this.ribbonBar5.Location = new System.Drawing.Point(125, 0);
+            this.ribbonBar5.Location = new System.Drawing.Point(176, 0);
             this.ribbonBar5.Name = "ribbonBar5";
             this.ribbonBar5.Size = new System.Drawing.Size(213, 102);
             this.ribbonBar5.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
@@ -442,10 +443,11 @@
             this.ribbonBar4.Dock = System.Windows.Forms.DockStyle.Left;
             this.ribbonBar4.Items.AddRange(new DevComponents.DotNetBar.BaseItem[] {
             this.buttonItem9,
-            this.buttonItem11});
+            this.buttonItem11,
+            this.buttonItem14});
             this.ribbonBar4.Location = new System.Drawing.Point(3, 0);
             this.ribbonBar4.Name = "ribbonBar4";
-            this.ribbonBar4.Size = new System.Drawing.Size(122, 102);
+            this.ribbonBar4.Size = new System.Drawing.Size(173, 102);
             this.ribbonBar4.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
             this.ribbonBar4.TabIndex = 0;
             this.ribbonBar4.Text = "Program Help";
@@ -1181,6 +1183,16 @@
             this.openFileDialog1.Filter = "Bukkit Plugin Sources|*.bpw";
             this.openFileDialog1.Title = "Open a Plugin";
             // 
+            // buttonItem14
+            // 
+            this.buttonItem14.Image = global::Bukkit_Plugin_Writer.Properties.Resources.Document_Help;
+            this.buttonItem14.ImageFixedSize = new System.Drawing.Size(32, 32);
+            this.buttonItem14.ImagePosition = DevComponents.DotNetBar.eImagePosition.Top;
+            this.buttonItem14.Name = "buttonItem14";
+            this.buttonItem14.SubItemsExpandWidth = 14;
+            this.buttonItem14.Text = "Documentation";
+            this.buttonItem14.Click += new System.EventHandler(this.buttonItem14_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -1305,6 +1317,7 @@
         private DevComponents.DotNetBar.ButtonItem buttonItem11;
         private DevComponents.DotNetBar.ButtonItem buttonItem12;
         private DevComponents.DotNetBar.ButtonItem buttonItem13;
+        private DevComponents.DotNetBar.ButtonItem buttonItem14;
     }
 }
 
