@@ -59,7 +59,6 @@
             this.ribbonTabItem4 = new DevComponents.DotNetBar.RibbonTabItem();
             this.ribbonTabItem5 = new DevComponents.DotNetBar.RibbonTabItem();
             this.ribbonTabItem6 = new DevComponents.DotNetBar.RibbonTabItem();
-            this.buttonItem1 = new DevComponents.DotNetBar.ButtonItem();
             this.qatCustomizeItem1 = new DevComponents.DotNetBar.QatCustomizeItem();
             this.ribbonBar1 = new DevComponents.DotNetBar.RibbonBar();
             this.styleManager1 = new DevComponents.DotNetBar.StyleManager(this.components);
@@ -159,7 +158,6 @@
             this.ribbonControl1.Name = "ribbonControl1";
             this.ribbonControl1.Padding = new System.Windows.Forms.Padding(0, 0, 0, 2);
             this.ribbonControl1.QuickToolbarItems.AddRange(new DevComponents.DotNetBar.BaseItem[] {
-            this.buttonItem1,
             this.qatCustomizeItem1});
             this.ribbonControl1.Size = new System.Drawing.Size(775, 160);
             this.ribbonControl1.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
@@ -392,7 +390,7 @@
             this.buttonItem15});
             this.ribbonBar5.Location = new System.Drawing.Point(176, 0);
             this.ribbonBar5.Name = "ribbonBar5";
-            this.ribbonBar5.Size = new System.Drawing.Size(302, 102);
+            this.ribbonBar5.Size = new System.Drawing.Size(268, 102);
             this.ribbonBar5.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
             this.ribbonBar5.TabIndex = 1;
             this.ribbonBar5.Text = "Community";
@@ -626,11 +624,6 @@
             this.ribbonTabItem6.Name = "ribbonTabItem6";
             this.ribbonTabItem6.Panel = this.ribbonPanel6;
             this.ribbonTabItem6.Text = "Help";
-            // 
-            // buttonItem1
-            // 
-            this.buttonItem1.Name = "buttonItem1";
-            this.buttonItem1.Text = "buttonItem1";
             // 
             // qatCustomizeItem1
             // 
@@ -1169,7 +1162,7 @@
             this.webBrowser1.ScrollBarsEnabled = false;
             this.webBrowser1.Size = new System.Drawing.Size(377, 141);
             this.webBrowser1.TabIndex = 0;
-            this.webBrowser1.Url = new System.Uri("http://chrisward.github.com/Bukkit-Plugin-Writer/title.html", System.UriKind.Absolute);
+            this.webBrowser1.Url = new System.Uri("http://wiki.chrisgward.com/index.php/Program:Bukkit_Plugin_Writer/Welcome_Page", System.UriKind.Absolute);
             // 
             // dockContainerItem4
             // 
@@ -1259,7 +1252,6 @@
         private DevComponents.DotNetBar.RibbonPanel ribbonPanel1;
         private DevComponents.DotNetBar.RibbonBar ribbonBar1;
         private DevComponents.DotNetBar.RibbonTabItem ribbonTabItem1;
-        private DevComponents.DotNetBar.ButtonItem buttonItem1;
         private DevComponents.DotNetBar.QatCustomizeItem qatCustomizeItem1;
         private DevComponents.DotNetBar.StyleManager styleManager1;
         private DevComponents.DotNetBar.DotNetBarManager dotNetBarManager1;
