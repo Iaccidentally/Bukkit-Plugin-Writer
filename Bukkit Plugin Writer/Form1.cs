@@ -110,6 +110,7 @@ namespace Bukkit_Plugin_Writer
             scintilla.Styles.LineNumber.FontName = "Verdana";
             scintilla.Styles.Max.FontName = "Verdana";
             scintilla.TabIndex = 0;
+            scintilla.KeyPress += new KeyPressEventHandler(scintilla_KeyPress);
             DockContainerItem tab = new DockContainerItem();
             PanelDockContainer container = new PanelDockContainer();
             tab.Control = container;
@@ -123,6 +124,7 @@ namespace Bukkit_Plugin_Writer
                     System.IO.StreamReader reader = new System.IO.StreamReader(Location);
                     scintilla.Text = reader.ReadToEnd();
                     scintilla.Tag = Location;
+                    
                     reader.Close();
                     tab.Text = Location.Split('\\')[Location.Split('\\').Count() - 1];
                     int i = 0;
@@ -134,6 +136,21 @@ namespace Bukkit_Plugin_Writer
                             i++;
                     }
                     bar4.SelectedDockTab = i;
+                }
+            }
+        }
+
+        void scintilla_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            Scintilla scint = (Scintilla)sender;
+            foreach (DockContainerItem tab in bar4.Items)
+            {
+                if (tab.Control.Contains(scint))
+                {
+                    if (!tab.Text.StartsWith("*"))
+                    {
+                        tab.Text = "* " + tab.Text;
+                    }
                 }
             }
         }
