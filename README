@@ -2,6 +2,6 @@ If you go diving in deep enough, you'll find executables somewhere :P (I'll add 
 
 If you are going to compile (maybe run, idk) you will need to copy ScintillaNET.dll and Scilexer.dll into somewhere located in your Windows path variable.
 
-If you have any ideas, email me - chris.ward@emailme.com.au
+If you have any ideas, add them to the todo list at http://wiki.chrisgward.com/index.php/Program:Bukkit_Plugin_Writer/TODO
 
-At the moment I won't be accepting pull requests nor adding contributors.
+If you want to help, put in a couple pulls and I may just add you as a contributor :D
