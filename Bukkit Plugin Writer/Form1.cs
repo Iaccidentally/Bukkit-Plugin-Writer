@@ -195,5 +195,10 @@ namespace Bukkit_Plugin_Writer
             
         }
 
+        private void buttonItem9_Click(object sender, EventArgs e)
+        {
+            System.Diagnostics.Process.Start("http://dev.bukkit.org/server-mods/bukkit-plugin-writer/create-ticket/");
+        }
+
     }
 }
