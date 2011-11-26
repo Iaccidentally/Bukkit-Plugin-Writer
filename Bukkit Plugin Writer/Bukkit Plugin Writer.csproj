@@ -171,6 +171,7 @@
     <Content Include="DLL\DevComponents.DotNetBar2.dll" />
     <Content Include="DLL\SciLexer.dll" />
     <Content Include="DLL\ScintillaNet.dll" />
+    <None Include="Resources\Lavabucket.PNG" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

@@ -139,12 +139,12 @@
             this.ribbonControl1.BackgroundStyle.Class = "";
             this.ribbonControl1.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
             this.ribbonControl1.CaptionVisible = true;
+            this.ribbonControl1.Controls.Add(this.ribbonPanel1);
             this.ribbonControl1.Controls.Add(this.ribbonPanel6);
             this.ribbonControl1.Controls.Add(this.ribbonPanel2);
             this.ribbonControl1.Controls.Add(this.ribbonPanel3);
             this.ribbonControl1.Controls.Add(this.ribbonPanel4);
             this.ribbonControl1.Controls.Add(this.ribbonPanel5);
-            this.ribbonControl1.Controls.Add(this.ribbonPanel1);
             this.ribbonControl1.Dock = System.Windows.Forms.DockStyle.Top;
             this.ribbonControl1.Items.AddRange(new DevComponents.DotNetBar.BaseItem[] {
             this.ribbonTabItem1,
@@ -206,6 +206,7 @@
             this.ribbonPanel6.StyleMouseOver.Class = "";
             this.ribbonPanel6.StyleMouseOver.CornerType = DevComponents.DotNetBar.eCornerType.Square;
             this.ribbonPanel6.TabIndex = 6;
+            this.ribbonPanel6.Visible = false;
             // 
             // ribbonBar5
             // 
@@ -430,7 +431,6 @@
             this.ribbonPanel1.StyleMouseOver.Class = "";
             this.ribbonPanel1.StyleMouseOver.CornerType = DevComponents.DotNetBar.eCornerType.Square;
             this.ribbonPanel1.TabIndex = 1;
-            this.ribbonPanel1.Visible = false;
             // 
             // ribbonBar3
             // 
@@ -507,6 +507,7 @@
             // 
             // ribbonTabItem1
             // 
+            this.ribbonTabItem1.Checked = true;
             this.ribbonTabItem1.Name = "ribbonTabItem1";
             this.ribbonTabItem1.Panel = this.ribbonPanel1;
             this.ribbonTabItem1.Text = "File";
@@ -537,7 +538,6 @@
             // 
             // ribbonTabItem6
             // 
-            this.ribbonTabItem6.Checked = true;
             this.ribbonTabItem6.Name = "ribbonTabItem6";
             this.ribbonTabItem6.Panel = this.ribbonPanel6;
             this.ribbonTabItem6.Text = "Help";
@@ -639,7 +639,7 @@
             this.bar5.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
             this.bar5.TabIndex = 0;
             this.bar5.TabStop = false;
-            this.bar5.Text = "dockContainerItem2";
+            this.bar5.Text = "Error List";
             // 
             // panelDockContainer2
             // 
@@ -845,7 +845,7 @@
             this.bar1.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
             this.bar1.TabIndex = 0;
             this.bar1.TabStop = false;
-            this.bar1.Text = "dockContainerItem1";
+            this.bar1.Text = "File Browser";
             // 
             // panelDockContainer1
             // 
@@ -909,7 +909,7 @@
             this.bar2.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
             this.bar2.TabIndex = 0;
             this.bar2.TabStop = false;
-            this.bar2.Text = "dockContainerItem3";
+            this.bar2.Text = "Useful classes";
             // 
             // panelDockContainer3
             // 
